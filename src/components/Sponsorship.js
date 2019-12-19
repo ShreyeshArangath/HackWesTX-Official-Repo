@@ -26,7 +26,11 @@ export class Sponsorship extends Component {
                 <img src={Test} className="a"/>
                 <p className="b">Test your APIs and give demos</p>
                
-        </div>       
+        </div> 
+        
+        <div>
+            <button type="button">Download the packet!</button>
+        </div>
 
             </div>
         )
