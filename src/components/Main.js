@@ -1,9 +1,11 @@
 import React from 'react'
+import AboutUs from './AboutUs'
+
 
 export default function Main() {
     return (
         <main>
-            <h2 className="subtitle">About Us</h2>
+           <AboutUs></AboutUs>
         </main>
     )
 }

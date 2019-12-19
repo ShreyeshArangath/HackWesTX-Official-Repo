@@ -57,7 +57,18 @@ header img{
   margin: 100px auto 2px auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0.8rem;
 }
+
+.team-container img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 250px;
+  border:#00202c 10px solid;
+  margin-bottom: 1rem;
+}
+
