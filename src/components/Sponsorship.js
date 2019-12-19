@@ -29,7 +29,7 @@ export class Sponsorship extends Component {
         </div> 
         
         <div>
-            <button type="button">Download the packet!</button>
+            <button type="button"><a href="../assets/hackwestx.pdf" download>Download the packet!</a></button>
         </div>
 
             </div>
