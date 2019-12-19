@@ -22,19 +22,19 @@ export class AboutUs extends Component {
                 <div className="team-container team-2">
                     <img src={Ahmed} />
                     <p className="title"> Ahmed Bayoumi</p>
-                    <p>Curabitur at condimentum felis, eu sollicitudin turpis. Proin nec rhoncus nunc. Pellentesque eget velit nec magna viverra porttitor. Aenean tincidunt ipsum sit amet lorem pulvinar convallis. Nullam quis ultrices libero.</p>
+                    <p></p>
                 </div>
 
                 <div className="team-container team-3">
                     <img src={Neil} />
                     <p className="title"> Neil Maro</p>
-                    <p>Curabitur at condimentum felis, eu sollicitudin turpis. Proin nec rhoncus nunc. Pellentesque eget velit nec magna viverra porttitor. Aenean tincidunt ipsum sit amet lorem pulvinar convallis. Nullam quis ultrices libero.</p>
+                    <p></p>
                 </div>
 
                 <div className="team-container team-4">
                     <img src={Stephen} />
                     <p className="title"> Stephen Joel</p>
-                    <p>Curabitur at condimentum felis, eu sollicitudin turpis. Proin nec rhoncus nunc. Pellentesque eget velit nec magna viverra porttitor. Aenean tincidunt ipsum sit amet lorem pulvinar convallis. Nullam quis ultrices libero.</p>
+                    <p></p>
                 </div>
             </div>
             </div>
