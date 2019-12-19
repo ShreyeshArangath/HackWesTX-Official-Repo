@@ -14,25 +14,25 @@ export class AboutUs extends Component {
             
                 <div className="team-container">
                     <div className="team-1">
-                        <img src={Shreyesh} />
+                        <img src={Shreyesh} alt='Director' />
                         <p className="title">Shreyesh Arangath</p>
                         <p></p>
                     </div>
                 
                     <div className="team-2">
-                        <img src={Ahmed} />
+                        <img src={Ahmed} alt='Logistics' />
                         <p className="title"> Ahmed Bayoumi</p>
                         <p></p>
                     </div>
 
                     <div className="team-3">
-                        <img src={Neil} />
+                        <img src={Neil} alt='Finance'/>
                         <p className="title"> Neil Maro</p>
                         <p></p>
                     </div>
 
                     <div className="team-4">
-                        <img src={Stephen} />
+                        <img src={Stephen} alt='Marketing'/>
                         <p className="title"> Stephen Joel</p>
                         <p></p>
                     </div>

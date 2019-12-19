@@ -73,7 +73,7 @@ header img{
   display: grid;
   text-align: center;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
 }
@@ -97,10 +97,17 @@ header img{
   margin: 20px auto 5px auto;
 }
 
-.team-1, .team-2, .team-3 {
-  border-right: 1px solid #294563;
-}
-
-.team-2, .team-3, .team-4 {
-  border-left: 1px solid #294563;
+.transition-1 {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  background: linear-gradient( rgba(80, 67, 67, 0.2), rgb(0, 0, 0)), url("./assets/mahir-uysal-568303-unsplash.jpg");
+  background-size: cover;
+  height: 70vh;
+  width: 100vw;
+  color: black;
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  background-position: fixed;
+  background-repeat: no-repeat;
 }
