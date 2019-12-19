@@ -13,30 +13,30 @@ export class AboutUs extends Component {
                 and hackathons are a great opportunity to do just that!</p>
             
                 <div className="team-container">
-                    <div className="team-container team-1">
-                    <img src={Shreyesh} />
-                    <p className="title">Shreyesh Arangath</p>
-                    <p></p>
-                </div>
+                    <div className="team-1">
+                        <img src={Shreyesh} />
+                        <p className="title">Shreyesh Arangath</p>
+                        <p></p>
+                    </div>
                 
-                <div className="team-container team-2">
-                    <img src={Ahmed} />
-                    <p className="title"> Ahmed Bayoumi</p>
-                    <p></p>
-                </div>
+                    <div className="team-2">
+                        <img src={Ahmed} />
+                        <p className="title"> Ahmed Bayoumi</p>
+                        <p></p>
+                    </div>
 
-                <div className="team-container team-3">
-                    <img src={Neil} />
-                    <p className="title"> Neil Maro</p>
-                    <p></p>
-                </div>
+                    <div className="team-3">
+                        <img src={Neil} />
+                        <p className="title"> Neil Maro</p>
+                        <p></p>
+                    </div>
 
-                <div className="team-container team-4">
-                    <img src={Stephen} />
-                    <p className="title"> Stephen Joel</p>
-                    <p></p>
+                    <div className="team-4">
+                        <img src={Stephen} />
+                        <p className="title"> Stephen Joel</p>
+                        <p></p>
+                    </div>
                 </div>
-            </div>
             </div>
         )
     }

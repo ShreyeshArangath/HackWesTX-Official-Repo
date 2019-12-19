@@ -57,21 +57,50 @@ header img{
   margin: 100px auto 2px auto;
 }
 
+.subtitle{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 100px;
+}
+
+.intro{
+  width: 40%;
+  margin: 100px auto 20px auto;
+  text-align: center;
+}
+
 .team-container {
   display: grid;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 200px;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 0.8rem;
+  grid-gap: 5px;
 }
 
-.team-container img{
+.team-1 img,.team-2 img, .team-3 img, .team-4 img{
   height: 250px;
   width: 250px;
   object-fit: cover;
+  display: block;
   border-radius: 250px;
-  border:#00202c 10px solid;
-  margin-bottom: 1rem;
+  border:#00202c 5px solid;
+  margin: 0 auto;
 }
 
+.title {
+  font-size: 1.4rem;
+}
+
+.team-container p {
+  width: 80%;
+  margin: 20px auto 5px auto;
+}
+
+.team-1, .team-2, .team-3 {
+  border-right: 1px solid #294563;
+}
+
+.team-2, .team-3, .team-4 {
+  border-left: 1px solid #294563;
+}
