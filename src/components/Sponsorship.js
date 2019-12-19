@@ -21,7 +21,7 @@ export class Sponsorship extends Component {
                  </div>
 
 
-        <div className="sponsor-container">
+        <div className="sponsor-container remove-border">
            
                 <img src={Test} className="a"/>
                 <p className="b">Test your APIs and give demos</p>
