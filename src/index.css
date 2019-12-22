@@ -91,7 +91,7 @@ header img{
 }
 
 .title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .team-container p {
@@ -159,7 +159,7 @@ button a {
 .sponsor-benefits {
   display: grid;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 150px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
@@ -175,7 +175,44 @@ button a {
   margin: 0 auto;
 }
 
+.benefit p {
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 20px auto 5px auto;
+}
 
+.faq-main {
+  background-color: white;
+}
+
+.faq-row-1, .faq-row-2 {
+  display: grid;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+
+.faq-row-3 {
+  display: grid;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  margin-left: 25px;
+  margin-right: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+
+.question {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: .5rem;
+}
 @media (min-width:800px) and (max-width:1150px){
   .intro {
     width: 80%;
