@@ -11,7 +11,6 @@ body {
  
 a {
   text-decoration: none;
-  text-emphasis: none;
 }
 
 h1{
@@ -240,7 +239,7 @@ button a {
 
 .contact-us {
   display: grid;
-  grid-template-columns: repeat(10,1fr);
+  grid-template-columns: repeat(5,1fr);
   align-items: center;
 }
 
@@ -248,8 +247,20 @@ button a {
   color: white;
 }
 
+.credits {
+  font-size: 0.1rem;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.credits a {
+  text-decoration: none;
+  color: white;
+}
 
+.made-with-love {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
 
 @media (min-width:800px) and (max-width:1150px){
   .intro {
