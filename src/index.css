@@ -113,78 +113,11 @@ header img{
   background-position: fixed;
   background-repeat: no-repeat;
 }
-
-.sponsor-container, .sponsor-container-reverse {
-  display: grid;
-  width: 70%;
-  opacity: 100;
-  margin: 20px auto 0 auto;
-  grid-template-columns: repeat(2,1fr);
-  padding-bottom: 20px;
-  border-bottom:1px solid #294563;
-}
-
-.sponsor-container{
-  grid-template-areas: 
-  "a b";
-  align-items: center;
-}
-
-.sponsor-container-reverse{
-  grid-template-areas: 
-  "d c";
-  align-items: center;
-  justify-items:end;
-}
-
-.a{
-  grid-area: a;
-}
-
-.b {
-  grid-area: b;
-}
-.c{
-  grid-area: c;
-}
-.d{
-  grid-area: d;
-}
-.sponsor-container img, .sponsor-container-reverse img {
-  height: 35vh;
-  width: 35vw;
-}
-
-.sponsor-container p, .sponsor-container-reverse p {
-  font-size: 1.34rem;
-  margin: 5px;
-  padding: 0 10px;
-}
-
-.remove-border {
-  border-bottom: 0px;
-}
-button {
-  padding: 20px;
-  border: none;
-  border-radius: 50px;
-  background: #3AB795;
-  color: black;
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: 35px;
-  margin-bottom: 25px;
-}
-button a {
-  text-decoration: none;
-  color: black;
-}
-
 .transition-2 {
   position: relative;
   overflow: hidden;
   background-color: black;
-  background: linear-gradient( rgba(80, 67, 67, 0.2), rgb(0, 0, 0)), url("./assets/hackathon.jpg");
+  background: linear-gradient( rgba(80, 67, 67, 0.2), rgb(0, 0, 0)), url("./assets/tom-gainor-752224-unsplash.jpg");
   background-size: cover;
   height: 50vh;
   width: 100vw;
@@ -195,88 +128,58 @@ button a {
   background-repeat: no-repeat;
 }
 
-#nav-icon{
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 10px;
-  top:11px;
-  z-index: 99;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
+.sponsorship-main {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background: black;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, rgb(226, 226, 226), );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, rgb(226, 226, 226), rgb(0, 0, 0)0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
 }
 
-#nav-icon span{
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  background: #3AB795;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+button a {
+  text-decoration: none;
+  text-emphasis: none;
+  color: black;
+}
+
+.sponsor-benefits {
+  display: grid;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.benefit img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
   display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #CC3112;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  border-radius: 250px;
+  border:#00202c 5px solid;
+  margin: 0 auto;
 }
 
-#nav-icon span:nth-child(1) {
-  top: 0px;
-}
-
-#nav-icon span:nth-child(2) {
-  top: 9px;
-}
-
-#nav-icon span:nth-child(3) {
-  top: 18px;
-}
-
-
-#nav-icon.open span:nth-child(1) {
-  top: 9px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-#nav-icon.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-#nav-icon.open span:nth-child(3) {
-  top: 9px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
 
 @media (min-width:800px) and (max-width:1150px){
   .intro {
     width: 80%;
   }
-
-  .sponsor-container, .sponsor-container-reverse {
-    display: block;
-    text-align: center;
-    width: 70%;
-  }
- 
 
 
 }

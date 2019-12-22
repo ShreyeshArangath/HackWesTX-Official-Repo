@@ -9,10 +9,8 @@ export default function Main() {
     return (
         <main>
            <AboutUs></AboutUs>
-           <Transition1></Transition1>
            <Sponsorship></Sponsorship>
-           <Transition2></Transition2>
-
+           
         </main>
     )
 }
