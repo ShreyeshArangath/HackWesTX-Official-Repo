@@ -8,6 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+ 
+a {
+  text-decoration: none;
+  text-emphasis: none;
+}
 
 h1{
   font-family: 'Bungee', cursive;
@@ -185,34 +190,67 @@ button a {
   background-color: white;
 }
 
-.faq-row-1, .faq-row-2 {
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 2px solid #e7e7e7;
+  border-radius: 15px;
+  padding: .5rem;
+}
+
+.faq-row-1, .faq-row-2 { /*Change in phone format*/
   display: grid;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 10rem;
+  margin-right: 10rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 10rem;
 }
 
 .faq-row-3 {
   display: grid;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 150px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-bottom: 20px;
+  margin-left: 10rem;
+  margin-right: 10rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 10rem;
 }
 
-.question {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
-  padding: .5rem;
+.faq-cards p {
+  width: 80%;
+  font-size: 1.2rem;
+  margin: 20px auto 5px auto;
 }
+
+.faq-cards .questions {
+  font-weight: bold;
+}
+
+.footer-main {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background: black;  /* fallback for old browsers */
+  background: linear-gradient(to top, black,rgb(0, 0, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.contact-us {
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  align-items: center;
+}
+
+.contact-us a {
+  color: white;
+}
+
+
+
+
 @media (min-width:800px) and (max-width:1150px){
   .intro {
     width: 80%;
