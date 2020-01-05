@@ -109,7 +109,7 @@ header img{
   background-color: black;
   background: linear-gradient( rgba(80, 67, 67, 0.2), rgb(0, 0, 0)), url("./assets/mahir-uysal-568303-unsplash.jpg");
   background-size: cover;
-  height: 50vh;
+  height: 69vh;
   width: 100vw;
   color: black;
   background-blend-mode: soft-light;
@@ -258,6 +258,11 @@ button a {
 }
 
 .made-with-love {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.application .form-group label{
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
 }

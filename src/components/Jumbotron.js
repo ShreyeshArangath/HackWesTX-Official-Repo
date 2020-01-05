@@ -10,7 +10,7 @@ export class Navbar extends Component {
                 <p>March 7th - March 8th</p>
                 <p>Texas Tech - Innovation Hub</p>
                 <div>
-                    <button type="button">Register now!</button>
+                    <button type="button"><a href="https://forms.app/hackwestx/registration">Register now!</a></button>
                 </div>
             </header>
         )
