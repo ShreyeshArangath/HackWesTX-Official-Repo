@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../src/assets/background-1.png");
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-size: contain;
   color: black;
 }
@@ -36,12 +36,17 @@ header{
 header h1 {
   font-size: 4.5rem;
   padding-top: 20px;
+  font-weight: bold;
   margin: 0px;
   color: white;
 }
 
+#texas {
+  color: #6ACD75;
+}
+
 header p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0px;
   padding: 0 0;
 }
@@ -70,7 +75,7 @@ header img{
   margin-top: 100px;
   margin-bottom: 50px;
   font-family: 'Bungee', cursive;
-  color: whitesmoke;
+  color: #141e30;
 }
 
 .intro{
@@ -104,11 +109,13 @@ header img{
 
 .title {
   font-size: 1.2rem;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .team-container p {
   width: 80%;
+  background-color: #06d6a0;
+  border-radius: 100px;
   margin: 20px auto 5px auto;
 }
 
@@ -193,9 +200,12 @@ button a {
 }
 
 .benefit p {
-  width: 80%;
+  width: 100%;
   font-size: 1.2rem;
-  margin: 20px auto 5px auto;
+  margin: 20px auto 20px auto;
+  margin-bottom: 30px;
+  background-color: #06d6a0;
+  border-radius: 100px;
 }
 
 .card {
@@ -217,16 +227,6 @@ button a {
   grid-gap: 10rem;
 }
 
-.faq-row-3 {
-  display: grid;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10rem;
-}
 
 .faq-cards p {
   width: 80%;
@@ -270,15 +270,92 @@ button a {
   font-family: 'Montserrat', sans-serif;
 }
 
-.application .form-group label{
-  font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
-}
 
-@media (min-width:800px) and (max-width:1150px){
+
+@media (max-width:1150px){
   body {
-    background-size: cover;
+    background-size: contain;
   }
 
+}
 
+@media(max-width: 800px){
+  body {
+    background-image: url("../src/assets/background-3.png");
+    background-size: contain;
+    background-repeat:repeat-y;
+  }
+
+  .team-container {
+    display: grid;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sponsor-benefits {
+    display: grid;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .team-1 img,.team-2 img, .team-3 img, .team-4 img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 250px;
+    border:#00202c 5px solid;
+    margin: 0 auto;
+  }
+
+  .faq-row{ /*Change in phone format*/
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .benefit{
+    margin: 10px;
+  }
+  
+  .benefit img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 250px;
+    border:#00202c 5px solid;
+    margin: 0 auto;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    border: 2px solid #e7e7e7;
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faq-cards p {
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 20px auto 5px auto;
+  }
+  
+  .faq-cards .questions {
+    font-weight: bold;
+  }
+  
+  
 }

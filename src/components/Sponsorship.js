@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Advertising from '../assets/megaphone.svg'
+import Advertising from '../assets/microphone.svg'
 import Test from '../assets/flask.svg'
 import Recruit from '../assets/recruit.svg'
 
