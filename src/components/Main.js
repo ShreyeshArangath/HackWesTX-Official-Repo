@@ -10,7 +10,6 @@ export default function Main() {
     return (
         <main>
            <AboutUs></AboutUs>
-           <Transition1></Transition1>
            <Sponsorship></Sponsorship>
             <FAQ></FAQ>
         </main>

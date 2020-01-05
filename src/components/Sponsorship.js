@@ -12,17 +12,17 @@ export class Sponsorship extends Component {
                 so in a casual and convenient environment.</p>
                 <button type="submit"><a href="../assets/hackwestx.pdf" download> Download the packet!</a></button>
                 <div class="sponsor-benefits">
-                    <div class="benefit benefit-1">
+                    <div class="benefit benefit-1 ">
                         <img src={Advertising}></img>
-                        <p>Gain Student Awareness</p>
+                        <p className="title">Gain Awareness</p>
                     </div>
-                    <div class="benefit benefit-2">
+                    <div class="benefit benefit-2 ">
                         <img src={Recruit}></img>
-                        <p>Recruit student developers</p>
+                        <p className="title">Recruit developers</p>
                     </div>
-                    <div class="benefit benefit-3">
+                    <div class="benefit benefit-3 ">
                         <img src={Test}></img>
-                        <p>Test APIs</p>
+                        <p className="title">Test APIs</p>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../src/assets/background-1.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+  color: black;
 }
  
 a {
@@ -25,10 +29,7 @@ header{
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  color: black;
 
 }
 
@@ -36,6 +37,7 @@ header h1 {
   font-size: 4.5rem;
   padding-top: 20px;
   margin: 0px;
+  color: white;
 }
 
 header p{
@@ -67,6 +69,8 @@ header img{
   font-size: 2rem;
   margin-top: 100px;
   margin-bottom: 50px;
+  font-family: 'Bungee', cursive;
+  color: whitesmoke;
 }
 
 .intro{
@@ -81,7 +85,11 @@ header img{
   margin-top: 100px;
   margin-bottom: 150px;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 50px;
+}
+
+.team-container .card {
+  border-radius: 120px;
 }
 
 .team-1 img,.team-2 img, .team-3 img, .team-4 img{
@@ -96,6 +104,7 @@ header img{
 
 .title {
   font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .team-container p {
@@ -117,6 +126,7 @@ header img{
   background-position: fixed;
   background-repeat: no-repeat;
 }
+
 .transition-2 {
   position: relative;
   overflow: hidden;
@@ -134,12 +144,11 @@ header img{
 
 .sponsorship-main {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  background: black;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, rgb(226, 226, 226), );  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, rgb(226, 226, 226), rgb(0, 0, 0)0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  color: black;
+}
+
+.sponsor-benefits .card {
+  border-radius: 130px;
 }
 
 button {
@@ -166,7 +175,11 @@ button a {
   margin-top: 50px;
   margin-bottom: 150px;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-gap: 50px;
+}
+
+.benefit{
+  margin: 50px;
 }
 
 .benefit img {
@@ -185,18 +198,15 @@ button a {
   margin: 20px auto 5px auto;
 }
 
-.faq-main {
-  background-color: white;
-}
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white;
   border: 2px solid #e7e7e7;
-  border-radius: 15px;
+  border-radius: 50px;
   padding: .5rem;
 }
 
-.faq-row-1, .faq-row-2 { /*Change in phone format*/
+.faq-row{ /*Change in phone format*/
   display: grid;
   text-align: center;
   margin-top: 50px;
@@ -232,9 +242,7 @@ button a {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  background: black;  /* fallback for old browsers */
-  background: linear-gradient(to top, black,rgb(0, 0, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  color: black;
 }
 
 .contact-us {
@@ -244,7 +252,7 @@ button a {
 }
 
 .contact-us a {
-  color: white;
+  color: black;
 }
 
 .credits {
@@ -254,7 +262,7 @@ button a {
 
 .credits a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .made-with-love {
@@ -268,8 +276,8 @@ button a {
 }
 
 @media (min-width:800px) and (max-width:1150px){
-  .intro {
-    width: 80%;
+  body {
+    background-size: cover;
   }
 
 
