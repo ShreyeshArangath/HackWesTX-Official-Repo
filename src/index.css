@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../src/assets/background-1.png");
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   background-size: contain;
   color: black;
 }
@@ -36,9 +36,9 @@ header{
 header h1 {
   font-size: 4.5rem;
   padding-top: 20px;
-  font-weight: bold;
+  font-weight: bolder;
   margin: 0px;
-  color: white;
+  color: black;
 }
 
 #texas {
@@ -275,8 +275,82 @@ button a {
 @media (max-width:1150px){
   body {
     background-size: contain;
+    background-image: url("../src/assets/background-1.png");
+    background-repeat: repeat-y;
+    background-position: center;
+  }
+  .team-container {
+    display: grid;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
+  .sponsor-benefits {
+    display: grid;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .team-1 img,.team-2 img, .team-3 img, .team-4 img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 250px;
+    border:#00202c 5px solid;
+    margin: 0 auto;
+  }
+
+  .faq-row{ /*Change in phone format*/
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    grid-gap: 20px;
+  }
+
+  .benefit{
+    margin: 10px;
+  }
+  
+  .benefit img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 250px;
+    border:#00202c 5px solid;
+    margin: 0 auto;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    border: 2px solid #e7e7e7;
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faq-cards p {
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 20px auto 5px auto;
+  }
+  
+  .faq-cards .questions {
+    font-weight: bold;
+  }
+  
 }
 
 @media(max-width: 800px){
@@ -322,6 +396,7 @@ button a {
     margin-right: 20px;
     margin-bottom: 0;
     margin-top: 10px;
+    grid-gap: 20px;
   }
 
   .benefit{
