@@ -6,7 +6,7 @@ export class Navbar extends Component {
         return (
             <header>
                 <img src={Logo} />
-                <h1>HackWes<span id="">TX</span></h1>
+                <h1>HackWesTX</h1>
                 <p>March 7th - March 8th</p>
                 <p>Texas Tech - Innovation Hub</p>
                 <div>

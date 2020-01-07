@@ -26,7 +26,7 @@ export default function Footer() {
         class="fas fa-code footer-code"></i></h6>
            </div>
            <div className="credits">
-            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik, DinosoftLabs, Good Ware, and Icon Pond</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik, DinosoftLabs, and Icon Pond</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
            </div>
         </div>
     )

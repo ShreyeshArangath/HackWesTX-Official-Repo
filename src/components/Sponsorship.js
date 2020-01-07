@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Advertising from '../assets/microphone.svg'
+import Advertising from '../assets/megaphone.svg'
 import Test from '../assets/flask.svg'
 import Recruit from '../assets/recruit.svg'
 
@@ -12,17 +12,17 @@ export class Sponsorship extends Component {
                 so in a casual and convenient environment.</p>
                 <button type="submit"><a href="../assets/hackwestx.pdf" download> Download the packet!</a></button>
                 <div class="sponsor-benefits">
-                    <div class="benefit benefit-1 ">
+                    <div class="benefit benefit-1">
                         <img src={Advertising}></img>
-                        <p className="title">Gain Awareness</p>
+                        <p>Gain Student Awareness</p>
                     </div>
-                    <div class="benefit benefit-2 ">
+                    <div class="benefit benefit-2">
                         <img src={Recruit}></img>
-                        <p className="title">Recruit developers</p>
+                        <p>Recruit student developers</p>
                     </div>
-                    <div class="benefit benefit-3 ">
+                    <div class="benefit benefit-3">
                         <img src={Test}></img>
-                        <p className="title">Test APIs</p>
+                        <p>Test APIs</p>
                     </div>
                 </div>
             </div>

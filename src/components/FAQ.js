@@ -5,7 +5,7 @@ export default function FAQ() {
         <div className="faq-main">
             <h2 className="subtitle">Frequently Asked Questions</h2>
             <p className="intro"></p>
-            <div className="faq-cards faq-row">
+            <div className="faq-cards faq-row-1">
                 <div className="card">
                     <p class="questions">What's a hackathon?</p>
                     <p>Hackathons are usually software or hardware development events where many hackers and innovators 
@@ -16,7 +16,7 @@ export default function FAQ() {
                     <p>Nothing! HackWesTX is completely free to students!</p>
                 </div>
             </div>
-            <div className="faq-cards faq-row">
+            <div className="faq-cards faq-row-2">
                 <div className="card">
                     <p class="questions">Do I need a team?</p>
                     <p>You are able to register for HackWesTX without a team, but collaborating with a 
@@ -27,13 +27,14 @@ export default function FAQ() {
                     <p>Of course! All participants will be well fed and provided with ample amounts of swag!</p>
                 </div>
             </div>
-            <div className="faq-cards faq-row">
+            <div className="faq-cards faq-row-3">
                 <div className="card">
-                    <p class="questions">What should I bring?</p>
-                    <p>Please bring a valid student ID in addition to anything that would help you with 
-                        creating your hack or making you comfortable. A laptop, charger, mouse, keyboard, light jacket, and 
-                        any hygienic products are recommended</p>
+                    <p class="questions">Can I register in advance?</p>
+                    <p>You can! Check this website in the near future for a registration form!</p>
                 </div>
+                <div></div>
+                <div></div>
+            
             </div>
         </div>
     )
