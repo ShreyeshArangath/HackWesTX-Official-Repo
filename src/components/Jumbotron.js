@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import Logo from '../assets/screen.svg'
-import Style from '../css/glitch.css'
-
+import Glitch from '../css/glitch.css'
+import Style from '../css/jumbotron.css'
 export class Navbar extends Component {
     render() {
         return (
-            <header style={Style}>
+            <header style={Style, Glitch}>
                 <img src={Logo} />
                 <div className="hackwestx">
                     <h1 className="glitch" data-text="HackWesTX">HackWes<span id="texas">TX</span></h1>

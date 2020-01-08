@@ -22,6 +22,12 @@ h2,h3,h4,h5,h6,p, button{
 }
 
 
+.intro{
+  width: 40%;
+  margin: 100px auto 20px auto;
+  text-align: center;
+}
+
 header{
 
   text-align: center;
@@ -82,41 +88,7 @@ header p {
   margin-bottom: 50px;
 }
 
-.about-intro {
-  width: 40%;
-  margin: 100px auto 20px auto;
-  text-align: center;
-  padding-bottom: 150px;
-}
 
-.intro{
-  width: 40%;
-  margin: 100px auto 20px auto;
-  text-align: center;
-}
-
-.time {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.countdown {
-  display:grid;
-  grid-template-columns: repeat(6,1fr);
-  text-align: center;
-  row-gap: 0rem;
-}
-
-.time-number {
-  font-size: 4rem;
-  font-family: 'Bungee', 'cursive';
-  margin: 0;
-}
-
-
-#days {
-  color: #3AB795;
-}
 
 .team-container {
   display: grid;
@@ -175,16 +147,6 @@ header p {
   background-repeat: no-repeat;
 }
 
-.sponsorship-main {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  background: black;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, rgb(226, 226, 226), );  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, rgb(226, 226, 226), rgb(0, 0, 0)0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
-}
-
 button {
   padding: 20px;
   border: none;
@@ -203,114 +165,13 @@ button a {
   color: black;
 }
 
-.sponsor-benefits {
-  display: grid;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 150px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-}
-
-.benefit img {
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
-  display: block;
-  border-radius: 250px;
-  border:#00202c 5px solid;
-  margin: 0 auto;
-}
-
-.benefit p {
-  width: 80%;
-  font-size: 1.2rem;
-  margin: 20px auto 5px auto;
-}
-
-.faq-main {
-  background-color: white;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border: 2px solid #e7e7e7;
-  border-radius: 15px;
-  padding: .5rem;
-}
-
-.faq-row-1, .faq-row-2 { /*Change in phone format*/
-  display: grid;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10rem;
-}
-
-.faq-row-3 {
-  display: grid;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10rem;
-}
-
-.faq-cards p {
-  width: 80%;
-  font-size: 1rem;
-  margin: 20px auto 5px auto;
-}
-
-.faq-cards .questions {
-  font-weight: bold;
-}
-
-
-.footer-main {
+.team-section {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  background: black;  /* fallback for old browsers */
-  background: linear-gradient(to top, black,rgb(0, 0, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: black;
   color: white;
 }
-
-.contact-us {
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  align-items: center;
-}
-
-.contact-us a {
-  color: white;
-}
-
-.credits {
-  font-size: 0.1rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.credits a {
-  text-decoration: none;
-  color: white;
-}
-
-.made-with-love {
-  font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.application .form-group label{
-  font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
 
 @media (min-width:800px) and (max-width:1150px){
   .intro {

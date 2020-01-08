@@ -1,0 +1,50 @@
+
+header{
+
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background: black;
+    color: white;
+  
+  }
+  
+  header h1 {
+    font-size: 4.5rem;
+    padding-top: 20px;
+    margin: 0px;
+  }
+  
+  .hackwestx {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header button{
+    border: none;
+    border-radius: 50px;
+    background: #3AB795;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  header img{
+    width: 50vw;
+    height: 50vh;
+    margin: 100px auto 2px auto;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  #texas {
+    color: #6ACD75;
+  }
+  

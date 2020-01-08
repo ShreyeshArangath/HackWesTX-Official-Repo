@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Style from '../css/footer.css'
 export default function Footer() {
     return (
-        <div className="footer-main">
+        <div className="footer-main" style={Style}>
            <div className="contact-us">
                <div className="social-media">
                     <a href="#" ><i className="fab fa-facebook-f fa-2x"></i></a>

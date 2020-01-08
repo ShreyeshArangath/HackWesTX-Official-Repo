@@ -1,9 +1,11 @@
 import React from 'react'
+import Glitch from '../css/glitch-white.css'
+import Style from '../css/faq.css'
 
 export default function FAQ() {
     return (
-        <div className="faq-main">
-            <h2 className="subtitle">Frequently Asked Questions</h2>
+        <div className="faq-main" style={Style,Glitch}>
+            <h2 className="subtitle glitch-white" data-text="Frequently Asked Questions">Frequently Asked Questions</h2>
             <p className="intro"></p>
             <div className="faq-cards faq-row-1">
                 <div className="card">

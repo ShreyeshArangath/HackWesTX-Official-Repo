@@ -3,11 +3,12 @@ import Shreyesh from '../assets/shreyesh.jpg'
 import Ahmed from '../assets/ahmed.jpg'
 import Neil from '../assets/neil.png'
 import Stephen from '../assets/stephen.jpg'
+import Style from '../css/our-team.css'
 
 export class AboutUs extends Component {
     render() {
         return (
-            <div className="team-section">
+            <div className="team-section" style={Style}>
                 <h2 className="subtitle">Our Team</h2>
                 <div className="team-container">
                     <div className="team-1 ">

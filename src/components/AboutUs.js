@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Style from '../css/about-us.css'
 import Glitch from '../css/glitch-white.css'
 export class AboutUs extends Component {
     state = {
@@ -23,7 +24,7 @@ export class AboutUs extends Component {
     }, 1000);
     render() {
         return (
-            <div style={Glitch}>
+            <div style={AboutUs, Style}>
                 <h2 className="subtitle glitch-white" data-text="About Us">About Us</h2>
                 <p className="intro about-intro">HackWesTX II is Texas Tech University's second student-run hackathon! This year, the hackathon will start Saturday, March 7th and end Sunday, March 8th. Exact schedule times are yet to be determined. The hackathon will last 24 hours total! We are developers who encourage each other to do better. It’s not just about writing code or programming hardware, it’s about making a positive impact in our community. We want to empower the next generation of learners that will change our world 
                 and hackathons are a great opportunity to do just that!</p>
@@ -36,10 +37,10 @@ export class AboutUs extends Component {
                     <p className="time time-number seconds glitch-white" data-text={this.state.seconds}>{this.state.seconds}</p>
                     <p></p>
                     <p></p>
-                    <p className="time days">Days </p>
-                    <p className="time hours">Hours </p>
-                    <p className="time minutes">Minutes </p>
-                    <p className="time seconds">Seconds </p>
+                    <p className="time time-text days">Days </p>
+                    <p className="time time-text hours">Hours </p>
+                    <p className="time time-text minutes">Minutes </p>
+                    <p className="time time-text seconds">Seconds </p>
                     <p></p>
                 </div>
             </div>

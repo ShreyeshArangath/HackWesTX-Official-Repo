@@ -14,6 +14,7 @@ export default function Main() {
            <Sponsorship></Sponsorship>
             <FAQ></FAQ>
             <Team></Team>
+            
         </main>
     )
 }
