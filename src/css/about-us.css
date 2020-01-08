@@ -30,3 +30,20 @@
 #days {
   color: #3ab795;
 }
+
+
+@media(max-width:800px){
+  .about-intro {
+    padding-bottom: 50px;
+  }
+  .countdown {
+    column-gap: 1.5rem;
+  }
+  .time-number {
+    font-size: 3.6rem;
+  }
+  .time-text {
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}

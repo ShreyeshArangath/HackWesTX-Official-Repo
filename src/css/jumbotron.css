@@ -4,6 +4,7 @@ header {
   padding-bottom: 30px;
   background: black;
   color: white;
+
 }
 
 header h1 {
@@ -43,4 +44,25 @@ header p {
 
 #texas {
   color: #6acd75;
+}
+
+
+@media(max-width: 800px){
+
+  header h1{
+    font-size: 3rem;
+  }
+  header img {
+    width: 35vw;
+    height: 35vh;
+    margin-top: 10rem;
+  }
+  header button {
+    font-size: 1rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  
+
 }

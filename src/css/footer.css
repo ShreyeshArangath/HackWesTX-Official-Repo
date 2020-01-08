@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
-}ß
+}
 
 .contact-us a {
   color: black;

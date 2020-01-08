@@ -39,3 +39,11 @@
   font-size: 1.2rem;
   margin: 20px auto 5px auto;
 }
+
+
+@media(max-width: 800px){
+  .sponsor-benefits {
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 2rem;
+  }
+}

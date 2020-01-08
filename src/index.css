@@ -1,157 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bungee|Montserrat&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
- 
+
 a {
   text-decoration: none;
 }
 
-h1{
-  font-family: 'Bungee', cursive;
+h1 {
+  font-family: "Bungee", cursive;
 }
 
-h2,h3,h4,h5,h6,p, button{
-  font-family: 'Montserrat', sans-serif;
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  font-family: "Montserrat", sans-serif;
 }
 
-
-.intro{
+.intro {
   width: 40%;
   margin: 100px auto 20px auto;
   text-align: center;
 }
 
-header{
-
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  /* background: #141E30;  
-  background: -webkit-linear-gradient(to top, #243B55, #141E30); 
-  background: linear-gradient(to top, #243B55, #141E30);  */
-  background: black;
-  color: white;
-
-}
-
-header h1 {
-  font-size: 4.5rem;
-  padding-top: 20px;
-  margin: 0px;
-}
-
-.hackwestx {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header button{
-  border: none;
-  border-radius: 50px;
-  background: #3AB795;
-  color: black;
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-
-header img{
-  width: 50vw;
-  height: 50vh;
-  margin: 100px auto 2px auto;
-}
-
-header p {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-#texas {
-  color: #6ACD75;
-}
-
-
-.subtitle{
+.subtitle {
   text-align: center;
   font-size: 2rem;
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
-
-
-.team-container {
-  display: grid;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-}
-
-.team-1 img,.team-2 img, .team-3 img, .team-4 img{
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
-  display: block;
-  border-radius: 250px;
-  border:#00202c 5px solid;
-  margin: 0 auto;
-}
-
 .title {
   font-size: 1.2rem;
-}
-
-.team-container p {
-  width: 80%;
-  margin: 20px auto 5px auto;
-}
-
-.transition-1 {
-  position: relative;
-  overflow: hidden;
-  background-color: black;
-  background: linear-gradient( rgba(80, 67, 67, 0.2), rgb(0, 0, 0)), url("./assets/mahir-uysal-568303-unsplash.jpg");
-  background-size: cover;
-  height: 69vh;
-  width: 100vw;
-  color: black;
-  background-blend-mode: soft-light;
-  background-attachment: fixed;
-  background-position: fixed;
-  background-repeat: no-repeat;
-}
-.transition-2 {
-  position: relative;
-  overflow: hidden;
-  background-color: black;
-  background: linear-gradient( rgba(80, 67, 67, 0.2), rgb(0, 0, 0)), url("./assets/tom-gainor-752224-unsplash.jpg");
-  background-size: cover;
-  height: 50vh;
-  width: 100vw;
-  color: black;
-  background-blend-mode: soft-light;
-  background-attachment: fixed;
-  background-position: fixed;
-  background-repeat: no-repeat;
 }
 
 button {
   padding: 20px;
   border: none;
   border-radius: 50px;
-  background: #3AB795;
+  background: #3ab795;
   color: black;
   font-weight: bold;
   font-size: 1.1rem;
@@ -173,10 +70,8 @@ button a {
   color: white;
 }
 
-@media (min-width:800px) and (max-width:1150px){
+@media (min-width: 800px) and (max-width: 1150px) {
   .intro {
     width: 80%;
   }
-
-
 }
