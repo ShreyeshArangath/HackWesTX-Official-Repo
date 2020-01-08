@@ -1,26 +1,26 @@
-
 .team-container {
-    display: grid;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-  }
-  
-  .team-1 img,.team-2 img, .team-3 img, .team-4 img{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    display: block;
-    border-radius: 250px;
-    border:#00202c 5px solid;
-    margin: 0 auto;
-  }
+  display: grid;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
 
-  .team-container p {
-    width: 80%;
-    margin: 20px auto 5px auto;
-  }
-  
-  
+.team-1 img,
+.team-2 img,
+.team-3 img,
+.team-4 img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 250px;
+  border: #00202c 5px solid;
+  margin: 0 auto;
+}
+
+.team-container p {
+  width: 80%;
+  margin: 20px auto 5px auto;
+}

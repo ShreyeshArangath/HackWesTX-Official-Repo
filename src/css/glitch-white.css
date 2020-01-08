@@ -6,9 +6,9 @@
 }
 
 .glitch-white {
-    color: black;
-    position: relative;
-  }  
+  color: black;
+  position: relative;
+}
 
 .glitch-white::before,
 .glitch-white::after {
@@ -22,7 +22,7 @@
 }
 .glitch-white::before {
   left: 2px;
-  text-shadow: -4px 0 #49FC00;
+  text-shadow: -4px 0 #49fc00;
   clip: rect(24px, 550px, 90px, 0);
   animation: glitch-anim-2 3s infinite linear alternate-reverse;
 }
