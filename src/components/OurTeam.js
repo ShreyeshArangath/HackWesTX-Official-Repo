@@ -7,7 +7,7 @@ import Stephen from '../assets/stephen.jpg'
 export class AboutUs extends Component {
     render() {
         return (
-            <div>
+            <div className="team-section">
                 <h2 className="subtitle">Our Team</h2>
                 <div className="team-container">
                     <div className="team-1 ">

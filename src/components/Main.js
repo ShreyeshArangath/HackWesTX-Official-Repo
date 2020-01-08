@@ -12,9 +12,8 @@ export default function Main() {
         <main>
            <AboutUs></AboutUs>
            <Sponsorship></Sponsorship>
-           <Team></Team>
             <FAQ></FAQ>
-
+            <Team></Team>
         </main>
     )
 }

@@ -21,13 +21,16 @@ h2,h3,h4,h5,h6,p, button{
   font-family: 'Montserrat', sans-serif;
 }
 
+
 header{
+
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  background: #141E30;  
+  /* background: #141E30;  
   background: -webkit-linear-gradient(to top, #243B55, #141E30); 
-  background: linear-gradient(to top, #243B55, #141E30); 
+  background: linear-gradient(to top, #243B55, #141E30);  */
+  background: black;
   color: white;
 
 }
@@ -38,14 +41,14 @@ header h1 {
   margin: 0px;
 }
 
-header p{
-  font-size: 1.5rem;
-  margin: 0px;
-  padding: 0 0;
+.hackwestx {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header button{
-  padding: 20px;
   border: none;
   border-radius: 50px;
   background: #3AB795;
@@ -53,7 +56,7 @@ header button{
   font-weight: bold;
   font-size: 1.1rem;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 header img{
@@ -62,15 +65,28 @@ header img{
   margin: 100px auto 2px auto;
 }
 
+header p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
 #texas {
   color: #6ACD75;
 }
+
 
 .subtitle{
   text-align: center;
   font-size: 2rem;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+.about-intro {
+  width: 40%;
+  margin: 100px auto 20px auto;
+  text-align: center;
+  padding-bottom: 150px;
 }
 
 .intro{
@@ -80,7 +96,7 @@ header img{
 }
 
 .time {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -88,13 +104,15 @@ header img{
   display:grid;
   grid-template-columns: repeat(6,1fr);
   text-align: center;
-  row-gap: 0.1rem;
+  row-gap: 0rem;
 }
 
 .time-number {
   font-size: 4rem;
   font-family: 'Bungee', 'cursive';
+  margin: 0;
 }
+
 
 #days {
   color: #3AB795;
@@ -245,13 +263,14 @@ button a {
 
 .faq-cards p {
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 20px auto 5px auto;
 }
 
 .faq-cards .questions {
   font-weight: bold;
 }
+
 
 .footer-main {
   text-align: center;
@@ -291,6 +310,7 @@ button a {
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 @media (min-width:800px) and (max-width:1150px){
   .intro {
