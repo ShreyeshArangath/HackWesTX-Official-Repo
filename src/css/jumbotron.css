@@ -2,7 +2,7 @@ header {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  background: black;
+  /* background: black; */
   color: white;
 
 }
@@ -47,7 +47,7 @@ header p {
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 1000px){
 
   header h1{
     font-size: 3rem;

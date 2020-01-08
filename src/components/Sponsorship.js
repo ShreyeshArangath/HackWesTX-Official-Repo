@@ -3,6 +3,7 @@ import Advertising from '../assets/megaphone.svg'
 import Test from '../assets/flask.svg'
 import Recruit from '../assets/recruit.svg'
 import Glitch from '../css/glitch-white.css'
+import Packet from '../assets/hackwestx.pdf'
 import Style from '../css/sponsorship.css'
 export class Sponsorship extends Component {
     render() {
@@ -11,7 +12,7 @@ export class Sponsorship extends Component {
                 <h2 className="subtitle glitch container" data-text="Sponsor Us">Sponsor Us!</h2>
                 <p className="intro">Sponsoring a hackathon is a really good way to get in touch with best and brightest students there are within a college community and do 
                 so in a casual and convenient environment.</p>
-                <button type="submit"><a href="../assets/hackwestx.pdf" download> Download the packet!</a></button>
+                <button type="submit"><a href={Packet} download> Download the packet!</a></button>
                 <div class="sponsor-benefits">
                     <div class="benefit benefit-1">
                         <img src={Advertising}></img>

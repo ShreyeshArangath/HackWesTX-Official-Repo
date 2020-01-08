@@ -41,7 +41,7 @@
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 1000px){
   .sponsor-benefits {
     grid-template-columns: repeat(1,1fr);
     row-gap: 2rem;

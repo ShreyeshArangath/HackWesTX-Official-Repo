@@ -11,6 +11,7 @@ body {
 
 a {
   text-decoration: none;
+  border: none;
 }
 
 h1 {
@@ -54,12 +55,14 @@ button {
   font-size: 1.1rem;
   margin-top: 15px;
   margin-bottom: 40px;
+
 }
 
 button a {
   text-decoration: none;
   text-emphasis: none;
   color: black;
+  border: none;
 }
 
 .team-section {
@@ -70,7 +73,7 @@ button a {
   color: white;
 }
 
-@media (min-width: 800px) and (max-width: 1150px) {
+@media (min-width: 900px) and (max-width: 1150px) {
   .intro {
     width: 80%;
   }

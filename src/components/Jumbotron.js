@@ -3,9 +3,10 @@ import Logo from '../assets/screen.svg'
 import Glitch from '../css/glitch.css'
 import Style from '../css/jumbotron.css'
 export class Navbar extends Component {
+
     render() {
         return (
-            <header style={Style, Glitch}>
+            <header style={Style, Glitch} id="jumbo" className="jumbo" ref={this.vantaRef}>
                 <img src={Logo} />
                 <div className="hackwestx">
                     <h1 className="glitch" data-text="HackWesTX">HackWes<span id="texas">TX</span></h1>
