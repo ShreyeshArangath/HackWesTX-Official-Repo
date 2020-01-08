@@ -5,6 +5,7 @@ import Neil from '../assets/neil.png'
 import Stephen from '../assets/stephen.jpg'
 
 export class AboutUs extends Component {
+    rellax = new Rellax('.rellax');
     render() {
         return (
             <div>
@@ -13,7 +14,7 @@ export class AboutUs extends Component {
                 and hackathons are a great opportunity to do just that!</p>
             
                 <div className="team-container">
-                    <div className="team-1">
+                    <div className="team-1 rellax" data-rellax-speed="8">
                         <img src={Shreyesh} alt='Director' />
                         <p className="title">Shreyesh Arangath</p>
                         <p></p>
