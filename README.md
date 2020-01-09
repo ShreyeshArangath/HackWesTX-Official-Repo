@@ -1,6 +1,10 @@
 # HackWesTX 2020
 
+The official website for HackWesTX 2020. The application was made using React, Node, Express, and the Google Cloud Platform. The website is hosted on Google Cloud's App Engine. 
+
 ## Available Scripts
+
+Please navigate to package.json and change `"start":"node server.js"` to `"start":"react-scripts start"`. This will kickstart the hot-reload feature for development. 
 
 In the project directory, you can run:
 
