@@ -1,0 +1,11 @@
+
+.platinum {
+   text-align: center;
+}
+
+.platinum img {
+    height: 150px;
+    width: 422px;
+    display: inline-block;
+    opacity: 70%;
+}

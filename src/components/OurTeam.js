@@ -32,7 +32,7 @@ export class AboutUs extends Component {
 
                     <div className="team-4">
                         <img src={Stephen} alt='Marketing'/>
-                        <p className="title glitch" data-text="Stephen Joel"> Stephen Joel</p>
+                        <p className="title glitch" data-text="Rishabh Tewari"> Rishabh Tewari</p>
                         <p>Head of Marketing</p>
                     </div>
                 </div>
