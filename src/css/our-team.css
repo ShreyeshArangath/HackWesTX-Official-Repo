@@ -5,6 +5,7 @@
   margin-bottom: 150px;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
+  row-gap: 40px;
 }
 
 .team-1 img,
