@@ -5,6 +5,7 @@ import Recruit from '../assets/recruit.svg'
 import Glitch from '../css/glitch-white.css'
 import Packet from '../assets/hackwestx.pdf'
 import Style from '../css/sponsorship.css'
+import OurSponsors from './OurSponsors'
 export class Sponsorship extends Component {
     render() {
         return (

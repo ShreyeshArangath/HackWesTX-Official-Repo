@@ -1,12 +1,31 @@
 
-.platinum {
+.platinum, .tyler {
    text-align: center;
    margin: 10px
 }
 
 .platinum img {
     height: 150px;
-    width: 422px;
+    object-fit: contain;
+    width: 322px;
     display: inline-block;
-    opacity: 70%;
+
 }
+
+.tyler img {
+    height: 150px;
+    object-fit: contain;
+    width: 300px;
+}
+
+@media(max-width: 1000px){
+    .platinum img {
+        height: 100px;
+        object-fit: contain;
+        width: 322px;
+        display: inline-block;
+    
+    }
+  
+  }
+  

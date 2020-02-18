@@ -12,7 +12,7 @@ export class Navbar extends Component {
                     <h1 className="glitch" data-text="HackWesTX">HackWes<span id="texas">TX</span></h1>
                 </div>
                 <p>March 7th - March 8th</p>
-                <p>Texas Tech - Innovation Hub</p>
+                <p>Texas Tech - IMSE </p>
                 <div>
                     <button type="button"><a href="https://forms.app/hackwestx/registration">Register now!</a></button>
                 </div>

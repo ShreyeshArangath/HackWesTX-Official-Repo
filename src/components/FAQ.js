@@ -34,8 +34,10 @@ export default function FAQ() {
                     <p class="questions">Can I register in advance?</p>
                     <p>You can! Check this website in the near future for a registration form!</p>
                 </div>
-                <div></div>
-                <div></div>
+                <div className="card">
+                    <p class="questions">Guidelines</p>
+                    <p>Since we are a MLH partnered event, we require our participants to follow the <a href="http://mlh.io/code-of-conduct">MLH Code of Conduct</a>. </p>
+                </div>
             
             </div>
         </div>

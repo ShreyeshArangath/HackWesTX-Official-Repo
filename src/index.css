@@ -73,8 +73,24 @@ button a {
   color: white;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 2rem;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
 @media (min-width: 900px) and (max-width: 1150px) {
   .intro {
     width: 80%;
   }
+
+}
+@media(max-width: 1000px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
 }

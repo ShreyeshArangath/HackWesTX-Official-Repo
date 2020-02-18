@@ -28,7 +28,7 @@
 
 @media(max-width: 1400px){
   .team-container{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
   }
 }
 

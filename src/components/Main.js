@@ -5,19 +5,16 @@ import Sponsorship from './Sponsorship'
 import Transition2 from './Transition2'
 import Team from './OurTeam'
 import FAQ from './FAQ'
-import Sponsors from './Sponsors'
-import LEDA from '../assets/LEDA.png'
-
+import OurSponsors from './OurSponsors'
 
 export default function Main() {
     return (
         <main>
-           <AboutUs></AboutUs>
-           {/* <Sponsors name={LEDA} type="platinum"></Sponsors> */}
-           <Sponsorship></Sponsorship>
-            <FAQ></FAQ>
-            <Team></Team>
-            
+           <AboutUs />
+           <OurSponsors />
+           <Sponsorship />
+            <FAQ />
+            <Team />
         </main>
     )
 }

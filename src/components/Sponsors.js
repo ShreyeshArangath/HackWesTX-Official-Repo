@@ -5,7 +5,7 @@ export class Sponsors extends Component {
     render() {
         return (
             <div className={this.props.type} style={Style}>
-                <img src={this.props.name} alt=""/>
+                <a href={this.props.website}><img src={this.props.name} alt=""/></a>
             </div>
         )
     }
