@@ -32,7 +32,7 @@ export default function FAQ() {
             <div className="faq-cards faq-row">
                 <div className="card">
                     <p class="questions">Can I register in advance?</p>
-                    <p>You can! Check this website in the near future for a registration form!</p>
+                    <p>You can! RIGHT NOW!!!!</p>
                 </div>
                 <div className="card">
                     <p class="questions">Guidelines</p>

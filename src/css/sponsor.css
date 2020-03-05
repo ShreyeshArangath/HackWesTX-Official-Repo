@@ -1,10 +1,22 @@
 
-.platinum, .tyler {
+.platinum img {
+    height: 175px;
+    object-fit: contain;
+    width: 450px;
+    display: inline-block;
+}
+
+ .gold, .tyler, .risa {
    text-align: center;
    margin: 10px
 }
 
-.platinum img {
+.platinum {
+    text-align: center;
+    margin: 20px;
+}
+
+.gold img {
     height: 150px;
     object-fit: contain;
     width: 322px;
@@ -18,14 +30,35 @@
     width: 300px;
 }
 
+.risa img {
+    height: 150px;
+    object-fit: contain;
+    width: 300px;
+}
+
+
 @media(max-width: 1000px){
-    .platinum img {
+    .gold img {
         height: 100px;
         object-fit: contain;
         width: 322px;
         display: inline-block;
     
     }
+
+    .platinum img {
+    height: 150px;
+    object-fit: contain;
+    width: 322px;
+    display: inline-block;
+    }
+
+    .risa img {
+        height: 250px;
+        object-fit: contain;
+        width: 300px;
+    }
+    
   
   }
   

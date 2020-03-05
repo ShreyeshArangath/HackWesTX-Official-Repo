@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Shreyesh from '../assets/shreyesh.jpg'
 import Ahmed from '../assets/ahmed.jpg'
 import Neil from '../assets/neil.png'
-import Stephen from '../assets/stephen.jpg'
+import Garret from '../assets/garret.png'
 import Rishabh from '../assets/rishabh.jpg'
 import Leidy from '../assets/leidy.jpg'
 import Style from '../css/our-team.css'
@@ -23,7 +23,7 @@ export class AboutUs extends Component {
                     <div className="team-2">
                         <img src={Ahmed} alt='Logistics' />
                         <p className="title glitch" data-text="Ahmed Bayoumi"> Ahmed Bayoumi</p>
-                        <p>Head of Logisitics</p>
+                        <p>Head of Logistics</p>
                     </div>
 
                     <div className="team-3">
@@ -44,8 +44,8 @@ export class AboutUs extends Component {
                         <p>Head of Outreach</p>
                     </div>
                     <div className="team-4">
-                        <img src={Stephen} alt='Marketing'/>
-                        <p className="title glitch" data-text="Stephen Janagarajan"> Stephen Janagarajan</p>
+                        <img src={Garret} alt='Marketing'/>
+                        <p className="title glitch" data-text="Garret Carmouche"> Garret Carmouche</p>
                         <p>Head of Hacker Experience</p>
                     </div>
                     <div></div>
