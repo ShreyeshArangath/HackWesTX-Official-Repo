@@ -8,7 +8,7 @@ export class AboutUs extends Component {
         minutes:"",
         seconds:""
     }
-    eventTime = new Date("March 7, 2020 08:00:00").getTime()
+    eventTime = new Date("March 7, 2022 08:00:00").getTime()
     update = setInterval(() => {
         const now = new Date().getTime();
         const timeDifference = this.eventTime-now;
