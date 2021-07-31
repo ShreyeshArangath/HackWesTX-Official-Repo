@@ -12,7 +12,7 @@ import RISA from '../assets/risa.png'
 export class OurSponsors extends Component {
     render() {
         return (
-         <Fragment>
+         <Fragment>{/* TODO - Past by business her */}
              <div className="grid-2">
                 <Sponsor type="platinum" name= {Cognizant} website="https://www.cognizant.com/"></Sponsor>
                 <Sponsor type="platinum" name= {GroupNIRE} website="https://groupnire.com/"></Sponsor>
