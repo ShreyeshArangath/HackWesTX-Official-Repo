@@ -8,7 +8,7 @@ export class AboutUs extends Component {
         minutes:"",
         seconds:""
     }
-    eventTime = new Date("March 7, 2022 08:00:00").getTime()
+    eventTime = new Date("February 26, 2022 08:00:00").getTime()
     update = setInterval(() => {
         const now = new Date().getTime();
         const timeDifference = this.eventTime-now;
@@ -26,7 +26,7 @@ export class AboutUs extends Component {
         return (
             <div style={AboutUs, Style}>
                 <h2 className="subtitle glitch-white" data-text="About Us">About Us</h2>
-                <p className="intro about-intro">HackWesTX II is Texas Tech University's second student-run hackathon! This year, the hackathon will start Saturday, March 7th and end Sunday, March 8th. Exact schedule times are yet to be determined. The hackathon will last 24 hours total! We are developers who encourage each other to do better. It’s not just about writing code or programming hardware, it’s about making a positive impact in our community. We want to empower the next generation of learners that will change our world 
+                <p className="intro about-intro">HackWesTX II is Texas Tech University's second student-run hackathon! This year, the hackathon will start Saturday, February 26th and end Sunday, February 27th. Exact schedule times are yet to be determined. The hackathon will last 24 hours total! We are developers who encourage each other to do better. It’s not just about writing code or programming hardware, it’s about making a positive impact in our community. We want to empower the next generation of learners that will change our world 
                 and hackathons are a great opportunity to do just that!</p>
                 
                 <div className="countdown">
