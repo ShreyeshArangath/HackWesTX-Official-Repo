@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import Ahmed from '../assets/ahmed.jpg'
 import Oreoluwa from '../assets/oreoluwa.jpeg'
 import Garret from '../assets/garret.png'
-import Esteban from '../assets/esteban.jpeg'
-import Leidy from '../assets/leidy.jpg'
+import Rishabh from '../assets/rishabh.jpg'
+import Samuel from '../assets/samuel.jpeg'
 import Style from '../css/our-team.css'
 import Glitch from '../css/glitch.css'
 
@@ -26,24 +26,25 @@ export class AboutUs extends Component {
                     </div>
 
                     <div className="team-3">
-                        <img src={Oreoluwa} alt='Finance'/>
+                        <img src={Oreoluwa} alt='Sponsorship'/>
                         <p className="title glitch" data-text="Oreoluwa Coker"> Oreoluwa Coker</p>
                         <p>Head of Sponsorship</p>
                     </div>
 
                     <div className="team-4">
-                        <img src={Esteban} alt='Marketing'/>
-                        <p className="title glitch" data-text="Esteban Washington"> Esteban Washington</p>
+                        <img src={Rishabh} alt='Marketing'/>
+                        <p className="title glitch" data-text="Esteban Washington"> Rishabh Tewari</p>
                         <p>Head of Marketing</p>
                     </div>
                     <div></div>
                     <div className="team-4">
-                        <img src={Leidy} alt='Marketing'/>
-                        <p className="title glitch" data-text="Ryan Covington"> Ryan Covington</p>
+                        <img src={Samuel} alt='Finance'/>
+                        <p className="title glitch" data-text="Samuel Adetunji"> Samuel Adetunji</p>
                         <p>Head of Finance</p>
                     </div>
                     <div className="team-4">
-                        <img src={Garret} alt='Marketing'/>
+                        {/* <img src={Garret} alt='Hacker Experience'/> TODO - Get Mary's Picture*/}
+                        <i className="far fa-user fa-10x" style={{minHeight:260+"px"}}></i>
                         <p className="title glitch" data-text="Mary Lee"> Mary Lee</p>
                         <p>Head of Hacker Experience</p>
         .            </div>

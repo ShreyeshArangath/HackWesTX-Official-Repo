@@ -9,8 +9,7 @@ export default function Main() {
     return (
         <main>
            <AboutUs />
-           {/* TODO - Insert Student Picture Here */}
-           {/* Todo - Get Mary and Ryan pictures */}
+           {/* TODO - Insert Student Pictures Here */}
            <OurSponsors />
            <Sponsorship />
             <FAQ />

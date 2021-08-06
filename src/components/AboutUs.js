@@ -44,8 +44,8 @@ export class AboutUs extends Component {
                     <p></p>
                 </div>
 
-                <div className="sponsors-list" >
-                    <h2 className="subtitle glitch-white" data-text="Our Sponsors">Our Sponsors</h2>
+                <div className="sponsors-list" >{/* Add more recent sponsors */}
+                    <h2 className="subtitle glitch-white" data-text="Our Sponsors">Recent Sponsors</h2>
                 </div>
             </div>
         )
