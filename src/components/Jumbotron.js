@@ -14,7 +14,7 @@ export class Navbar extends Component {
                 <p>February 26th - February 27th</p>
                 <p>Texas Tech</p>
                 <div> {/* Todo - Get new font */} 
-                    <button type="button"><a href="https://my.forms.app/hackwestxforms/hackwestx-registration">Register now!</a></button>
+                    <button type="button"><a href="https://my.forms.app/hackwestxforms/hackwestx-registration" target="_blank">Register now!</a></button>
                 </div>
             </header>
         )
