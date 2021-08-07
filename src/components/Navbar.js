@@ -1,10 +1,5 @@
-import React from 'react'
-import Cactus from '../assets/screen.svg'
+import React from "react";
 
 export default function Navbar() {
-  return (
-    <div className="navbar">
-  
-    </div>
-  )
+  return <div className="navbar"></div>;
 }

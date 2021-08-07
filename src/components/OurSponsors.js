@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import Style from "../css/about-us.css";
 import Sponsor from "./Sponsors.js";
 import LEDA from "../assets/LEDA.png";
 import StickerMule from "../assets/sticker-mule-logo-light-bg.svg";
@@ -14,7 +13,6 @@ export class OurSponsors extends Component {
   render() {
     return (
       <Fragment>
-        {/* TODO - Past sponsors here */}
         <div className="sponsors-list">
           {/* Add more recent sponsors */}
           <h2 className="subtitle glitch-white" data-text="Our Sponsors">

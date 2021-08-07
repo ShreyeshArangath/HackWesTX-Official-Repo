@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Main from '../components/Main'
 import Jumbotron from '../components/Jumbotron'
 import Navbar from '../components/Navbar'
