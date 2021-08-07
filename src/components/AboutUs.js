@@ -43,10 +43,6 @@ export class AboutUs extends Component {
                     <p className="time time-text seconds">Seconds </p>
                     <p></p>
                 </div>
-
-                <div className="sponsors-list" >{/* Add more recent sponsors */}
-                    <h2 className="subtitle glitch-white" data-text="Our Sponsors">Recent Sponsors</h2>
-                </div>
             </div>
         )
     }
