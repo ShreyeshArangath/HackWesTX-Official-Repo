@@ -16,79 +16,63 @@ import photo15 from "../assets/pastphotos/15.JPG";
 import photo16 from "../assets/pastphotos/16.JPG";
 import photo17 from "../assets/pastphotos/17.JPG";
 import photo18 from "../assets/pastphotos/18.JPG";
-import photo20 from "../assets/pastphotos/20.JPG";
-import photo21 from "../assets/pastphotos/21.JPG";
-import photo22 from "../assets/pastphotos/22.JPG";
-import photo23 from "../assets/pastphotos/23.JPG";
-import photo24 from "../assets/pastphotos/24.JPG";
 
 export class StudentSlideshow extends Component {
-
   render() {
     return (
-      <Carousel autoPlay emulateTouch infiniteLoop showArrows={false} showThumbs={false} showStatus={false}>
-          <div>
-            <img key="1" alt="Past hackathon pictures" src={photo1} />
-          </div>
-          <div>
-            <img key="2" alt="Past hackathon pictures" src={photo2} />
-          </div>
-          <div>
-            <img key="3" alt="Past hackathon pictures" src={photo3} />
-          </div>
-          <div>
-            <img key="4" alt="Past hackathon pictures" src={photo4} />
-          </div>
-          <div>
-            <img key="5" alt="Past hackathon pictures" src={photo5} />
-          </div>
-          <div>
-            <img key="6" alt="Past hackathon pictures" src={photo6} />
-          </div>
-          <div>
-            <img key="7" alt="Past hackathon pictures" src={photo7} />
-          </div>
-          <div>
-            <img key="8" alt="Past hackathon pictures" src={photo8} />
-          </div>
-          <div>
-            <img key="11" alt="Past hackathon pictures" src={photo11} />
-          </div>
-          <div>
-            <img key="12" alt="Past hackathon pictures" src={photo12} />
-          </div>
-          <div>
-            <img key="13" alt="Past hackathon pictures" src={photo13} />
-          </div>
-          <div>
-            <img key="15" alt="Past hackathon pictures" src={photo15} />
-          </div>
-          <div>
-            <img key="16" alt="Past hackathon pictures" src={photo16} />
-          </div>
-          <div>
-            <img key="17" alt="Past hackathon pictures" src={photo17} />
-          </div>
-          <div>
-            <img key="18" alt="Past hackathon pictures" src={photo18} />
-          </div>
-          <div>
-            <img key="20" alt="Past hackathon pictures" src={photo20} />
-          </div>
-          <div>
-            <img key="21" alt="Past hackathon pictures" src={photo21} />
-          </div>
-          <div>
-            <img key="22" alt="Past hackathon pictures" src={photo22} />
-          </div>
-          <div>
-            <img key="23" alt="Past hackathon pictures" src={photo23} />
-          </div>
-          <div>
-            <img key="24" alt="Past hackathon pictures" src={photo24} />
-          </div>
-          
-          
+      <Carousel
+        autoPlay
+        emulateTouch
+        infiniteLoop
+        showArrows={false}
+        showThumbs={false}
+        showStatus={false}
+      >
+        <div>
+          <img key="1" alt="Past hackathon pictures" src={photo1} />
+        </div>
+        <div>
+          <img key="2" alt="Past hackathon pictures" src={photo2} />
+        </div>
+        <div>
+          <img key="3" alt="Past hackathon pictures" src={photo3} />
+        </div>
+        <div>
+          <img key="4" alt="Past hackathon pictures" src={photo4} />
+        </div>
+        <div>
+          <img key="5" alt="Past hackathon pictures" src={photo5} />
+        </div>
+        <div>
+          <img key="6" alt="Past hackathon pictures" src={photo6} />
+        </div>
+        <div>
+          <img key="7" alt="Past hackathon pictures" src={photo7} />
+        </div>
+        <div>
+          <img key="8" alt="Past hackathon pictures" src={photo8} />
+        </div>
+        <div>
+          <img key="11" alt="Past hackathon pictures" src={photo11} />
+        </div>
+        <div>
+          <img key="12" alt="Past hackathon pictures" src={photo12} />
+        </div>
+        <div>
+          <img key="13" alt="Past hackathon pictures" src={photo13} />
+        </div>
+        <div>
+          <img key="15" alt="Past hackathon pictures" src={photo15} />
+        </div>
+        <div>
+          <img key="16" alt="Past hackathon pictures" src={photo16} />
+        </div>
+        <div>
+          <img key="17" alt="Past hackathon pictures" src={photo17} />
+        </div>
+        <div>
+          <img key="18" alt="Past hackathon pictures" src={photo18} />
+        </div>
       </Carousel>
     );
   }
