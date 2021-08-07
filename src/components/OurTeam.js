@@ -4,6 +4,8 @@ import Oreoluwa from "../assets/oreoluwa.jpg";
 import Garret from "../assets/garret.png";
 import Rishabh from "../assets/rishabh.jpg";
 import Samuel from "../assets/samuel.jpeg";
+import "../css/our-team.css";
+import "../css/glitch.css";
 
 export class AboutUs extends Component {
   render() {
