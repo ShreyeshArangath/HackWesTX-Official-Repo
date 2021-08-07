@@ -11,10 +11,10 @@ export class Navbar extends Component {
                 <div className="hackwestx">
                     <h1 className="glitch" data-text="HackWesTX">HackWes<span id="texas">TX</span></h1>
                 </div>
-                <p>March 7th - March 8th</p>
-                <p>Texas Tech - Innovation Hub </p>
-                <div>
-                    <button type="button"><a href="https://forms.app/hackwestx/registration">Register now!</a></button>
+                <p>February 26th - February 27th</p>
+                <p>Texas Tech</p>
+                <div> {/* Todo - Get new font */} 
+                    <button type="button"><a href="https://my.forms.app/hackwestxforms/hackwestx-registration" target="_blank">Register now!</a></button>
                 </div>
             </header>
         )

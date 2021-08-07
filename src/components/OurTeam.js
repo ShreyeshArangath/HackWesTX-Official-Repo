@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import Shreyesh from '../assets/shreyesh.jpg'
 import Ahmed from '../assets/ahmed.jpg'
-import Neil from '../assets/neil.png'
+import Oreoluwa from '../assets/oreoluwa.jpg'
 import Garret from '../assets/garret.png'
 import Rishabh from '../assets/rishabh.jpg'
-import Leidy from '../assets/leidy.jpg'
+import Samuel from '../assets/samuel.jpeg'
 import Style from '../css/our-team.css'
 import Glitch from '../css/glitch.css'
 
@@ -15,39 +14,40 @@ export class AboutUs extends Component {
                 <h2 className="subtitle glitch" data-text="Our Team">Our Team</h2>
                 <div className="team-container">
                     <div className="team-1 ">
-                        <img src={Shreyesh} alt='Director' />
-                        <p className="title glitch" data-text="Our Team">Shreyesh Arangath</p>
+                        <img src={Ahmed} alt='Director' />
+                        <p className="title glitch" data-text="Our Team">Ahmed Bayoumi</p>
                         <p>Lead Director</p>
                     </div>
                 
                     <div className="team-2">
-                        <img src={Ahmed} alt='Logistics' />
-                        <p className="title glitch" data-text="Ahmed Bayoumi"> Ahmed Bayoumi</p>
+                        <img src={Garret} alt='Logistics' />
+                        <p className="title glitch" data-text="Garret Carmouche"> Garret Carmouche</p>
                         <p>Head of Logistics</p>
                     </div>
 
                     <div className="team-3">
-                        <img src={Neil} alt='Finance'/>
-                        <p className="title glitch" data-text="Neil Maro"> Neil Maro</p>
-                        <p>Head of Finance</p>
+                        <img src={Oreoluwa} alt='Sponsorship' style={{marginBottom:45 + 'px'}}/>
+                        <p className="title glitch" data-text="Oreoluwa Coker"> Oreoluwa Coker</p>
+                        <p>Head of Sponsorship</p>
                     </div>
 
                     <div className="team-4">
                         <img src={Rishabh} alt='Marketing'/>
-                        <p className="title glitch" data-text="Rishabh Tewari"> Rishabh Tewari</p>
+                        <p className="title glitch" data-text="Esteban Washington"> Rishabh Tewari</p>
                         <p>Head of Marketing</p>
                     </div>
                     <div></div>
-                    <div className="team-4">
-                        <img src={Leidy} alt='Marketing'/>
-                        <p className="title glitch" data-text="Leidy Ward"> Leidy Ward</p>
-                        <p>Head of Outreach</p>
+                    <div className="team-2">
+                        <img src={Samuel} alt='Finance'/>
+                        <p className="title glitch" data-text="Samuel Adetunji"> Samuel Adetunji</p>
+                        <p>Head of Finance</p>
                     </div>
-                    <div className="team-4">
-                        <img src={Garret} alt='Marketing'/>
-                        <p className="title glitch" data-text="Garret Carmouche"> Garret Carmouche</p>
+                    <div className="team-3">
+                        {/* <img src={Garret} alt='Hacker Experience'/> TODO - Get Mary's Picture*/}
+                        <i className="far fa-user fa-10x" style={{minHeight:260+"px"}}></i>
+                        <p className="title glitch" data-text="Mary Lee"> Mary Lee</p>
                         <p>Head of Hacker Experience</p>
-                    </div>
+        .            </div>
                     <div></div>
                 </div>
             </div>
