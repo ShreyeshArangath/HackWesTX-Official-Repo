@@ -4,6 +4,7 @@ import Oreoluwa from "../assets/oreoluwa.jpg";
 import Garret from "../assets/garret.png";
 import Rishabh from "../assets/rishabh.jpg";
 import Samuel from "../assets/samuel.jpeg";
+import Mary from "../assets/Mary.jpg";
 import "../css/our-team.css";
 import "../css/glitch.css";
 
@@ -33,11 +34,7 @@ export class AboutUs extends Component {
           </div>
 
           <div className="team-3">
-            <img
-              src={Oreoluwa}
-              alt="Sponsorship"
-              style={{ marginBottom: 45 + "px" }}
-            />
+            <img src={Oreoluwa} alt="Sponsorship" />
             <p className="title glitch" data-text="Oreoluwa Coker">
               {" "}
               Oreoluwa Coker
@@ -63,16 +60,12 @@ export class AboutUs extends Component {
             <p>Head of Finance</p>
           </div>
           <div className="team-3">
-            {/* <img src={Garret} alt='Hacker Experience'/> TODO - Get Mary's Picture*/}
-            <i
-              className="far fa-user fa-10x"
-              style={{ minHeight: 260 + "px" }}
-            ></i>
+            <img src={Mary} alt="Hacker Experience" />
             <p className="title glitch" data-text="Mary Lee">
               {" "}
               Mary Lee
             </p>
-            <p>Head of Hacker Experience</p>.{" "}
+            <p>Head of Hacker Experience</p>
           </div>
           <div></div>
         </div>
