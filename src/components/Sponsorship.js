@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Advertising from "../assets/megaphone.svg";
 import Test from "../assets/flask.svg";
 import Recruit from "../assets/recruit.svg";
-import Packet from "../assets/hackwestx.pdf";
+import Packet from "../assets/HWT Sponsorship Packet 22.pdf";
 import Style from "../css/sponsorship.css";
 export class Sponsorship extends Component {
   render() {
