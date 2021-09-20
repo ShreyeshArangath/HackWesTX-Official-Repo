@@ -4,22 +4,17 @@ export default function Footer() {
     return (
         <div className="footer-main" style={Style}>
            <div className="contact-us">
-               {/* <div className="social-media">
-                    <a href="https://www.facebook.com/hackwestx/" ><i className="fab fa-facebook-f fa-2x"></i></a>
-               </div>
-               <div class="social-media">
-                    <a href="https://www.linkedin.com/company/hackwestx/" ><i className="fab fa-linkedin fa-2x"></i></a>
+                <div class="social-media">
+                    <a href="https://discord.gg/kv2thUmDrb" target="_blank" rel="noopener noreferrer" ><i className="fab fa-discord fa-2x"></i></a>
                 </div>
                 <div class="social-media">
-                    <a href="https://join.slack.com/t/hackwestx2020/shared_invite/enQtOTA3MzU1Nzc0MDE3LWYyZTM2ZjMzNjhkMTBlNjdhYmQzMzA5Yzk5NGQ1YjMyYmIyODUwNjMyYmFmNDY5ZTgwM2NlYWZjYTlmYzQ5NGY" ><i className="fab fa-slack fa-2x"></i></a>
+                    <a href="https://twitter.com/HWTXOfficial" target="_blank" rel="noopener noreferrer" ><i className="fab fa-twitter fa-2x"></i></a>
                 </div>
-                
                 <div class="social-media">
-                    <a href="https://www.instagram.com/hackwestx" ><i className="fab fa-instagram fa-2x"></i></a>
-                </div> */}
-                
+                    <a href="https://www.instagram.com/HWTXOfficial/" target="_blank" rel="noopener noreferrer" ><i className="fab fa-instagram fa-2x"></i></a>
+                </div>
                 <div class="social-media">
-                    <a href="admin@hackwestx.com" ><i className="far fa-paper-plane fa-2x"></i></a>
+                    <a href="mailto:admin@hackwestx.com" target="_blank" rel="noopener noreferrer" ><i className="far fa-paper-plane fa-2x"></i></a>
                 </div>
            </div>
            <div class="made-with-love">
