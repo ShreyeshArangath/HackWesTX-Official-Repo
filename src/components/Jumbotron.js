@@ -18,7 +18,7 @@ export class Navbar extends Component {
           </h1>
         </div>
         <p>February 26th - February 27th</p>
-        <p>Texas Tech</p>
+        <p>Lubbock (TBD)</p>
         <div>
           {" "}
           <button type="button">
