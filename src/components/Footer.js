@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="footer-main" style={Style}>
            <div className="contact-us">
                 <div class="social-media">
-                    <a href="https://discord.gg/kv2thUmDrb" target="_blank" rel="noopener noreferrer" ><i className="fab fa-discord fa-2x"></i></a>
+                    <a href="https://discord.gg/cRPCbWffQS" target="_blank" rel="noopener noreferrer" ><i className="fab fa-discord fa-2x"></i></a>
                 </div>
                 <div class="social-media">
                     <a href="https://twitter.com/HWTXOfficial" target="_blank" rel="noopener noreferrer" ><i className="fab fa-twitter fa-2x"></i></a>
