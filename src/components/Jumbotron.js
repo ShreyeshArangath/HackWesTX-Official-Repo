@@ -11,14 +11,14 @@ export class Navbar extends Component {
         className="jumbo"
         ref={this.vantaRef}
       >
-        <img src={Logo} alt="HackWesTX Logo"/>
+        <img src={Logo} alt="HackWesTX Logo" />
         <div className="hackwestx">
           <h1 className="glitch" data-text="HackWesTX">
             HackWes<span id="texas">TX</span>
           </h1>
         </div>
         <p>February 26th - February 27th</p>
-        <p>Lubbock (TBD)</p>
+        <p>Innovation Hub, Lubbock</p>
         <div>
           {" "}
           <button type="button">
