@@ -2,12 +2,12 @@ This is an updated version of the original HackWesTX website. Pulled together us
 
 I want to add some things while I update the site to a more recent codebase.
 
--[] Migrate old site to Next, maybe divide up the bits so its not one big scroll
--[] Add firebase to the project
--[] Add notification features
--[] Before the countdown ends, just showcase the socials and sponsors
--[] Add messaging features to a cool console with specific admin login (easter egg?)
--[] After the countdown date, we open up a console that's fed info from firebase collection.
+- [ ] Migrate old site to Next, maybe divide up the bits so its not one big scroll
+- [ ] Add firebase to the project
+- [ ] Add notification features
+- [ ] Before the countdown ends, just showcase the socials and sponsors
+- [ ] Add messaging features to a cool console with specific admin login (easter egg?)
+- [ ] After the countdown date, we open up a console that's fed info from firebase collection.
 
 
 <details> 
