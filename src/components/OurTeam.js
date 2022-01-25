@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Ahmed from "../assets/ahmed.jpg";
-import Oreoluwa from "../assets/oreoluwa.jpg";
+import Sahil from "../assets/sahil.jpg";
 import Garret from "../assets/garret.png";
-import Tristan from "../assets/tristan.jpg";
+import Shruti from "../assets/shruti.jpeg";
 import Samuel from "../assets/samuel.jpeg";
 import Mary from "../assets/Mary.jpg";
 import "../css/our-team.css";
@@ -34,19 +34,19 @@ export class AboutUs extends Component {
           </div>
 
           <div className="team-3">
-            <img src={Oreoluwa} alt="Sponsorship" />
-            <p className="title glitch" data-text="Oreoluwa Coker">
+            <img src={Sahil} alt="Sponsorship" />
+            <p className="title glitch" data-text="Sahil Shamdasani">
               {" "}
-              Oreoluwa Coker
+              Sahil Shamdasani
             </p>
             <p>Head of Sponsorship</p>
           </div>
 
           <div className="team-4">
-            <img src={Tristan} alt="Marketing" />
-            <p className="title glitch" data-text="Tristan Lucero">
+            <img src={Shruti} alt="Marketing" />
+            <p className="title glitch" data-text="Shruti Nagawekar">
               {" "}
-              Tristan Lucero
+              Shruti Nagawekar
             </p>
             <p>Head of Marketing</p>
           </div>
