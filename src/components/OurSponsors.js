@@ -1,13 +1,10 @@
 import React, { Component, Fragment } from "react";
 import Sponsor from "./Sponsors.js";
-import LEDA from "../assets/LEDA.png";
-import StickerMule from "../assets/sticker-mule-logo-light-bg.svg";
-import ParkEast from "../assets/park_east.png";
-import TylerTech from "../assets/tyler-tech.png";
-import SmoothFusion from "../assets/smooth-fusion.png";
-import Cognizant from "../assets/cognizant-no-bg.png";
-import GroupNIRE from "../assets/GroupNire__4C_Reg.jpg";
-import RISA from "../assets/risa.png";
+import RedManta from "../assets/sponsors/redmanta.png";
+import Agrisompo from "../assets/sponsors/agrisompo.jpg";
+import LEDA from "../assets/sponsors/LEDA.png";
+import CipherTech from "../assets/sponsors/ciphertech.png";
+import Electrical from "../assets/sponsors/ece.jpg";
 
 export class OurSponsors extends Component {
   render() {
@@ -16,51 +13,36 @@ export class OurSponsors extends Component {
         <div className="sponsors-list">
           {/* Add more recent sponsors */}
           <h2 className="subtitle glitch-white" data-text="Our Sponsors">
-            Recent Sponsors
+            Our Sponsors
           </h2>
         </div>
         <div className="grid-2">
           <Sponsor
             type="platinum"
-            name={Cognizant}
-            website="https://www.cognizant.com/"
+            name={RedManta}
+            website="https://www.redmanta.games/"
           ></Sponsor>
           <Sponsor
             type="platinum"
-            name={GroupNIRE}
-            website="https://groupnire.com/"
-          ></Sponsor>
-          <Sponsor
-            type="platinum"
-            name={LEDA}
-            website="https://lubbockeda.org/"
+            name={Agrisompo}
+            website="https://www.agrisompo.com/"
           ></Sponsor>
         </div>
         <div className="grid">
           <Sponsor
             type="gold"
-            name={SmoothFusion}
-            website="https://smoothfusion.com/"
-          ></Sponsor>
-          <Sponsor
-            type="tyler"
-            name={TylerTech}
-            website="https://www.tylertech.com/"
+            name={LEDA}
+            website="https://lubbockeda.org/"
           ></Sponsor>
           <Sponsor
             type="gold"
-            name={ParkEast}
-            website="https://www.parkeastliving.com"
+            name={CipherTech}
+            website="https://www.ciphertechsolutions.com/"
           ></Sponsor>
           <Sponsor
             type="gold"
-            name={StickerMule}
-            website="http://hackp.ac/mlh-stickermule-hackathons"
-          ></Sponsor>
-          <Sponsor
-            type="risa"
-            name={RISA}
-            website="https://www.thisisrisa.org/"
+            name={Electrical}
+            website="https://www.depts.ttu.edu/ece/"
           ></Sponsor>
         </div>
       </Fragment>
