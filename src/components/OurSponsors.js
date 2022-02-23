@@ -5,6 +5,7 @@ import Agrisompo from "../assets/sponsors/agrisompo.jpg";
 import LEDA from "../assets/sponsors/LEDA.png";
 import CipherTech from "../assets/sponsors/ciphertech.png";
 import Electrical from "../assets/sponsors/ece.jpg";
+import FlexRadio from "../assets/sponsors/flexradio.png";
 
 export class OurSponsors extends Component {
   render() {
@@ -26,6 +27,11 @@ export class OurSponsors extends Component {
             type="platinum"
             name={Agrisompo}
             website="https://www.agrisompo.com/"
+          ></Sponsor>
+          <Sponsor
+            type="platinum"
+            name={FlexRadio}
+            website="https://www.flexradio.com/"
           ></Sponsor>
         </div>
         <div className="grid">
