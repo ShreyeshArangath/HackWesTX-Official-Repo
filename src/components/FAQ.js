@@ -17,7 +17,10 @@ export default function FAQ() {
           <p>
             Most definitely! We're working behind the scenes to update the site
             to something more recent and functional. Hopefully with QR codes and
-            on-site interactions. 😌
+            on-site interactions.{" "}
+            <span role="img" aria-label="satisfied-emoji">
+              😌
+            </span>
           </p>
         </div>
       </div>
