@@ -17,13 +17,12 @@ export class Navbar extends Component {
             HackWes<span id="texas">TX</span>
           </h1>
         </div>
-        <p>February 26th - February 27th</p>
+        <p>February 25th - February 26th</p>
         <p>Innovation Hub, Lubbock</p>
         <div>
-          {" "}
           <button type="button">
             <a
-              href="https://my.forms.app/hackwestxforms/hackwestx-registration"
+              href="https://my.forms.app/hackwestxforms/hackwestx-registration-spring23"
               target="blank"
             >
               Register now!
