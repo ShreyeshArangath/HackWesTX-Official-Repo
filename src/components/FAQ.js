@@ -13,6 +13,16 @@ export default function FAQ() {
       <p className="intro"></p>
       <div className="faq-cards faq-row">
         <div className="card">
+          <p class="questions">Is the site gonna change?</p>
+          <p>
+            Most definitely! We're working behind the scenes to update the site
+            to something more recent and functional. Hopefully with QR codes and
+            on-site interactions. 😌
+          </p>
+        </div>
+      </div>
+      <div className="faq-cards faq-row">
+        <div className="card">
           <p class="questions">What's a hackathon?</p>
           <p>
             Hackathons are usually software or hardware development events where
