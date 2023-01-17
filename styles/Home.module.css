@@ -1,278 +1,227 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.tx {
+  color: #6acd75;
 }
-
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
+.glitch {
+  position: relative;
+  color: white;
+  letter-spacing: 0.1em;
+  animation: glitch-skew 0.5s infinite linear alternate-reverse;
+}
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+  height: 100%;
+  left: -2px;
+  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+  animation: glitch-anim2 1s infinite linear alternate-reverse;
 }
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
-
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
-
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: '';
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
-}
-
-.logo,
-.thirteen {
-  position: relative;
-}
-
-.thirteen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 75px;
-  height: 75px;
-  padding: 25px 10px;
-  margin-left: 16px;
-  transform: translateZ(0);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: 0px 2px 8px -1px #0000001a;
-}
-
-.thirteen::before,
-.thirteen::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-}
-
-/* Conic Gradient Animation */
-.thirteen::before {
-  animation: 6s rotate linear infinite;
-  width: 200%;
-  height: 200%;
-  background: var(--tile-border);
-}
-
-/* Inner Square */
-.thirteen::after {
-  inset: 0;
-  padding: 1px;
-  border-radius: var(--border-radius);
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 1),
-    rgba(var(--tile-end-rgb), 1)
-  );
-  background-clip: content-box;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+@keyframes glitch-anim {
+  0% {
+    clip: rect(30px, 9999px, 42px, 0);
+    transform: skew(0.85deg);
   }
-
-  .card:hover span {
-    transform: translateX(4px);
+  5% {
+    clip: rect(59px, 9999px, 21px, 0);
+    transform: skew(0.34deg);
+  }
+  10% {
+    clip: rect(99px, 9999px, 15px, 0);
+    transform: skew(0.01deg);
+  }
+  15% {
+    clip: rect(25px, 9999px, 61px, 0);
+    transform: skew(0.97deg);
+  }
+  20% {
+    clip: rect(35px, 9999px, 42px, 0);
+    transform: skew(0.94deg);
+  }
+  25% {
+    clip: rect(39px, 9999px, 62px, 0);
+    transform: skew(0.31deg);
+  }
+  30% {
+    clip: rect(62px, 9999px, 55px, 0);
+    transform: skew(0.9deg);
+  }
+  35% {
+    clip: rect(36px, 9999px, 31px, 0);
+    transform: skew(0.13deg);
+  }
+  40% {
+    clip: rect(27px, 9999px, 26px, 0);
+    transform: skew(0.01deg);
+  }
+  45% {
+    clip: rect(55px, 9999px, 9px, 0);
+    transform: skew(0.5deg);
+  }
+  50% {
+    clip: rect(69px, 9999px, 73px, 0);
+    transform: skew(0.85deg);
+  }
+  55% {
+    clip: rect(53px, 9999px, 89px, 0);
+    transform: skew(0.15deg);
+  }
+  60% {
+    clip: rect(20px, 9999px, 28px, 0);
+    transform: skew(0.62deg);
+  }
+  65% {
+    clip: rect(81px, 9999px, 28px, 0);
+    transform: skew(0.1deg);
+  }
+  70% {
+    clip: rect(54px, 9999px, 93px, 0);
+    transform: skew(0.3deg);
+  }
+  75% {
+    clip: rect(22px, 9999px, 6px, 0);
+    transform: skew(0.84deg);
+  }
+  80% {
+    clip: rect(23px, 9999px, 5px, 0);
+    transform: skew(0.55deg);
+  }
+  85% {
+    clip: rect(24px, 9999px, 76px, 0);
+    transform: skew(0.68deg);
+  }
+  90% {
+    clip: rect(3px, 9999px, 29px, 0);
+    transform: skew(0.48deg);
+  }
+  95% {
+    clip: rect(43px, 9999px, 95px, 0);
+    transform: skew(0.37deg);
+  }
+  100% {
+    clip: rect(58px, 9999px, 66px, 0);
+    transform: skew(0.05deg);
   }
 }
-
-@media (prefers-reduced-motion) {
-  .thirteen::before {
-    animation: none;
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(66px, 9999px, 28px, 0);
+    transform: skew(0.12deg);
   }
-
-  .card:hover span {
-    transform: none;
+  5% {
+    clip: rect(85px, 9999px, 40px, 0);
+    transform: skew(0.7deg);
   }
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
+  10% {
+    clip: rect(14px, 9999px, 33px, 0);
+    transform: skew(0.81deg);
   }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
+  15% {
+    clip: rect(48px, 9999px, 76px, 0);
+    transform: skew(0.57deg);
   }
-
-  .card {
-    padding: 1rem 2.5rem;
+  20% {
+    clip: rect(77px, 9999px, 16px, 0);
+    transform: skew(0.4deg);
   }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
+  25% {
+    clip: rect(15px, 9999px, 43px, 0);
+    transform: skew(0.27deg);
   }
-
-  .center {
-    padding: 8rem 0 6rem;
+  30% {
+    clip: rect(33px, 9999px, 11px, 0);
+    transform: skew(0.84deg);
   }
-
-  .center::before {
-    transform: none;
-    height: 300px;
+  35% {
+    clip: rect(50px, 9999px, 51px, 0);
+    transform: skew(0.16deg);
   }
-
-  .description {
-    font-size: 0.8rem;
+  40% {
+    clip: rect(52px, 9999px, 11px, 0);
+    transform: skew(0.21deg);
   }
-
-  .description a {
-    padding: 1rem;
+  45% {
+    clip: rect(39px, 9999px, 58px, 0);
+    transform: skew(0.98deg);
   }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
+  50% {
+    clip: rect(88px, 9999px, 42px, 0);
+    transform: skew(0.42deg);
   }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
+  55% {
+    clip: rect(98px, 9999px, 11px, 0);
+    transform: skew(0.51deg);
   }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
+  60% {
+    clip: rect(73px, 9999px, 73px, 0);
+    transform: skew(0.81deg);
   }
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+  65% {
+    clip: rect(82px, 9999px, 59px, 0);
+    transform: skew(1deg);
+  }
+  70% {
+    clip: rect(64px, 9999px, 84px, 0);
+    transform: skew(0.94deg);
+  }
+  75% {
+    clip: rect(41px, 9999px, 44px, 0);
+    transform: skew(0.38deg);
+  }
+  80% {
+    clip: rect(23px, 9999px, 35px, 0);
+    transform: skew(0.54deg);
+  }
+  85% {
+    clip: rect(20px, 9999px, 100px, 0);
+    transform: skew(0.76deg);
+  }
+  90% {
+    clip: rect(9px, 9999px, 96px, 0);
+    transform: skew(0.64deg);
+  }
+  95% {
+    clip: rect(29px, 9999px, 82px, 0);
+    transform: skew(0.47deg);
+  }
+  100% {
+    clip: rect(15px, 9999px, 94px, 0);
+    transform: skew(0.76deg);
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
+@keyframes glitch-skew {
+  0% {
+    transform: skew(2deg);
   }
-
-  .logo,
-  .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  10% {
+    transform: skew(4deg);
   }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
+  20% {
+    transform: skew(4deg);
   }
-  to {
-    transform: rotate(0deg);
+  30% {
+    transform: skew(-2deg);
+  }
+  40% {
+    transform: skew(4deg);
+  }
+  50% {
+    transform: skew(2deg);
+  }
+  60% {
+    transform: skew(-3deg);
+  }
+  70% {
+    transform: skew(-1deg);
+  }
+  80% {
+    transform: skew(-3deg);
+  }
+  90% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(-2deg);
   }
 }

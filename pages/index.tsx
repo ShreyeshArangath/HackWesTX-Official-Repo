@@ -1,13 +1,11 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
+
+import Jumbotron from "../components/individual/Jumbotron";
 
 const HomePage = () => {
   return (
     <Grid container>
-      <Grid item xs={12}>
-        <Typography variant="h5" textAlign="center">
-          Home
-        </Typography>
-      </Grid>
+      <Jumbotron />
     </Grid>
   );
 };
