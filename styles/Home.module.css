@@ -3,7 +3,6 @@
 }
 .glitch {
   position: relative;
-  color: white;
   letter-spacing: 0.1em;
   animation: glitch-skew 0.5s infinite linear alternate-reverse;
 }

@@ -40,8 +40,8 @@ let theme = createTheme({
   },
   typography: {
     fontFamily: "Sofia Sans",
-    subtitle2: {
-      fontFamily: "Press Start 2P",
+    h2: {
+      fontFamily: "Bungee",
     },
   },
 });

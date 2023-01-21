@@ -1,6 +1,9 @@
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import Countdown from "react-countdown";
+import styles from "../styles/Home.module.css";
 
+import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
 
 const HomePage = () => {
@@ -29,6 +32,13 @@ const HomePage = () => {
             hackathons are a great opportunity to do just that!
           </Typography>
         </Box>
+      </Grid>
+      <Grid item xs={12} px="auto">
+        <Countdown
+          date={new Date("February 25, 2023 08:00:00")}
+          className={styles.glitch}
+          renderer={HWTCountdown}
+        />
       </Grid>
     </Grid>
   );

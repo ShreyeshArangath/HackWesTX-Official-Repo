@@ -40,8 +40,10 @@ const Jumbotron = () => {
         <Box>
           <Typography
             textAlign="center"
+            variant="h2"
             className={styles.glitch}
             fontSize="3rem"
+            color="whitesmoke"
           >
             HACKWES<span className={styles.tx}>TX</span>
           </Typography>
