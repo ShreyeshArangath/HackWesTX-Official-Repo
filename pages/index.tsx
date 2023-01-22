@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Card, CardMedia, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Countdown from "react-countdown";
 import styles from "../styles/Home.module.css";
@@ -41,8 +41,13 @@ const HomePage = () => {
           renderer={HWTCountdown}
         />
       </Grid>
-      <Grid item xs={12} maxHeight="95vh" position="absolute">
+      <Grid item xs={12} height="90vh" display="flex" alignContent="center">
         <StudentSlideshow />
+      </Grid>
+      <Grid item xs={12} height="20vh">
+        <Typography textAlign="center" variant="h3">
+          Our Sponsors
+        </Typography>
       </Grid>
     </Grid>
   );
