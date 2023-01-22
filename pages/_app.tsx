@@ -43,9 +43,6 @@ let theme = createTheme({
     h2: {
       fontFamily: "Bungee",
     },
-    h3: {
-      fontFamily: "Bungee",
-    },
   },
   components: {
     MuiUseMediaQuery: {

@@ -12,6 +12,7 @@ import Countdown from "react-countdown";
 import flexRadio from "../assets/sponsors/flexradio.png";
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
+import Sponsorships from "../components/individual/Sponsorships";
 import StudentSlideshow from "../components/individual/StudentSlideshow";
 import styles from "../styles/Home.module.css";
 
@@ -119,6 +120,7 @@ const HomePage = () => {
         <Typography
           textAlign="center"
           variant="h3"
+          fontFamily="Bungee"
           my="auto"
           className={styles.glitch}
         >
@@ -141,6 +143,7 @@ const HomePage = () => {
         rel="noopener"
         target="_blank"
       />
+      <Sponsorships />
     </Grid>
   );
 };

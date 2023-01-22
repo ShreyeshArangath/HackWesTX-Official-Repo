@@ -29,9 +29,6 @@ const StudentSlideshow = () => {
       plugins={plugins}
       circular={true}
       align="prev"
-      onMoveEnd={(e) => {
-        console.log(e);
-      }}
     >
       <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo1} height={350} placeholder="blur" /></Box>
       <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo2} height={350} placeholder="blur" /></Box>
