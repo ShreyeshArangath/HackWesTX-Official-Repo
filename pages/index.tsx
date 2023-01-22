@@ -1,11 +1,12 @@
-import { Card, CardMedia, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import Link from "next/link";
 import Countdown from "react-countdown";
-import styles from "../styles/Home.module.css";
-
+import flexRadio from "../assets/sponsors/flexradio.png";
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
 import StudentSlideshow from "../components/individual/StudentSlideshow";
+import styles from "../styles/Home.module.css";
 
 const HomePage = () => {
   return (
@@ -44,11 +45,39 @@ const HomePage = () => {
       <Grid item xs={12} height="90vh" display="flex" alignContent="center">
         <StudentSlideshow />
       </Grid>
-      <Grid item xs={12} height="20vh">
-        <Typography textAlign="center" variant="h3">
-          Our Sponsors
+      <Grid
+        item
+        xs={12}
+        height="20vh"
+        display="flex"
+        alignContent="center"
+        justifyContent="space-around"
+      >
+        <Typography
+          textAlign="center"
+          variant="h3"
+          my="auto"
+          className={styles.glitch}
+        >
+          Sponsored By
         </Typography>
       </Grid>
+      <Box
+        sx={{
+          width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
+          backgroundImage: `url(${flexRadio.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPositionX: "center",
+          backgroundSize: "contain",
+          height: "20vh",
+          mx: "auto",
+          my: 5
+        }}
+        component={Link}
+        href="https://www.flexradio.com/"
+        rel="noopener"
+        target="_blank"
+      />
     </Grid>
   );
 };
