@@ -2,7 +2,7 @@ import { AutoPlay } from "@egjs/flicking-plugins";
 import "@egjs/flicking-plugins/dist/flicking-plugins.css";
 import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
-import { Box } from "@mui/material";
+import { Box, Card } from "@mui/material";
 import Image from "next/image";
 import photo1 from "../../assets/pastphotos/1.jpg";
 import photo11 from "../../assets/pastphotos/11.jpg";
@@ -33,21 +33,21 @@ const StudentSlideshow = () => {
         console.log(e);
       }}
     >
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo1} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo2} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo3} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo4} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo5} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo6} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo7} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo8} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo11} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo12} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo13} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo15} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo16} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo17} height={500} placeholder="blur" /></Box>
-      <Box mr={3} my="auto" className="flicking-panel"><Image alt="Past hackathon pictures" src={photo18} height={500} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo1} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo2} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo3} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo4} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo5} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo6} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo7} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo8} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo11} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo12} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo13} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo15} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo16} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo17} height={350} placeholder="blur" /></Box>
+      <Box mr={3} my="auto" className="flicking-panel" component={Card} elevation={5} sx={{backgroundColor: "#A6C48A", "&:hover": {boxShadow: 10}}}><Image alt="Past hackathon pictures" src={photo18} height={350} placeholder="blur" /></Box>
     </Flicking>
   );
 };

@@ -42,12 +42,11 @@ const Jumbotron = () => {
             textAlign="center"
             variant="h2"
             className={styles.glitch}
-            fontSize="3rem"
             color="whitesmoke"
           >
             HACKWES<span className={styles.tx}>TX</span>
           </Typography>
-          <Typography variant="h5" textAlign="center" className={styles.glitch}>
+          <Typography variant="h5" textAlign="center" color="whitesmoke" className={styles.glitch}>
             February 25th - February 26th
           </Typography>
           <Typography variant="h5" textAlign="center" className={styles.glitch}>

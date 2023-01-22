@@ -44,6 +44,13 @@ let theme = createTheme({
       fontFamily: "Bungee",
     },
   },
+  components: {
+    MuiUseMediaQuery: {
+      defaultProps: {
+        noSsr: true,
+      },
+    },
+  },
 });
 theme = responsiveFontSizes(theme);
 
