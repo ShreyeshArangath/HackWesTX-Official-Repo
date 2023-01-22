@@ -34,9 +34,6 @@ let theme = createTheme({
     secondary: {
       main: "#A63D93",
     },
-    background: {
-      paper: "#f7f4f0",
-    },
   },
   typography: {
     fontFamily: "Sofia Sans",

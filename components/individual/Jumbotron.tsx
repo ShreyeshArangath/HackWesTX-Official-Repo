@@ -12,6 +12,7 @@ const Jumbotron = () => {
       sx={{
         backgroundColor: "black",
         p: 3,
+        mb: 7,
       }}
     >
       <Grid
@@ -46,7 +47,12 @@ const Jumbotron = () => {
           >
             HACKWES<span className={styles.tx}>TX</span>
           </Typography>
-          <Typography variant="h5" textAlign="center" color="whitesmoke" className={styles.glitch}>
+          <Typography
+            variant="h5"
+            textAlign="center"
+            color="whitesmoke"
+            className={styles.glitch}
+          >
             February 25th - February 26th
           </Typography>
           <Typography variant="h5" textAlign="center" className={styles.glitch}>
