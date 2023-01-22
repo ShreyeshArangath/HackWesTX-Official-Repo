@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
+import StudentSlideshow from "../components/individual/StudentSlideshow";
 
 const HomePage = () => {
   return (
@@ -39,6 +40,9 @@ const HomePage = () => {
           className={styles.glitch}
           renderer={HWTCountdown}
         />
+      </Grid>
+      <Grid item xs={12} maxHeight="95vh" position="absolute">
+        <StudentSlideshow />
       </Grid>
     </Grid>
   );

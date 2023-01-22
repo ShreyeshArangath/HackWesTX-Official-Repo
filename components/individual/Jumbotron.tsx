@@ -68,6 +68,7 @@ const Jumbotron = () => {
                 my: 4,
                 mx: "auto",
                 width: "50%",
+                borderRadius: 10,
               }}
               href="https://my.forms.app/hackwestxforms/hackwestx-registration-spring23"
               target="_blank"
