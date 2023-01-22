@@ -105,7 +105,7 @@ const HomePage = () => {
           renderer={HWTCountdown}
         />
       </Grid>
-      <Grid item xs={12} height="90vh" display="flex" alignContent="center">
+      <Grid item xs={12} height="80vh" display="flex" alignContent="center">
         <StudentSlideshow />
       </Grid>
       <Grid
