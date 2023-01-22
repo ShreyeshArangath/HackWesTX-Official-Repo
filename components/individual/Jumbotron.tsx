@@ -1,4 +1,11 @@
-import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  Typography,
+  useTheme
+} from "@mui/material";
 import Image from "next/image";
 import Logo from "../../assets/screen.svg";
 import styles from "../../styles/Home.module.css";
@@ -11,7 +18,8 @@ const Jumbotron = () => {
       container
       sx={{
         backgroundColor: "black",
-        p: 3,
+        px: 1,
+        py: 5,
         mb: 7,
       }}
     >
@@ -26,7 +34,7 @@ const Jumbotron = () => {
           py: 5,
         }}
       >
-        <Image src={Logo} alt="Cactus" />
+        <Image src={Logo} alt="Cactus" height={350} />
       </Grid>
       <Grid
         item
@@ -38,11 +46,18 @@ const Jumbotron = () => {
           alignItems: "center",
         }}
       >
-        <Box>
+        <Container>
           <Typography
             textAlign="center"
             variant="h2"
+            my={2}
             className={styles.glitch}
+            fontSize={{
+              xs: "2rem",
+              sm: "2.75rem",
+              md: "3.5rem",
+              lg: "4rem",
+            }}
             color="whitesmoke"
           >
             HACKWES<span className={styles.tx}>TX</span>
@@ -72,7 +87,6 @@ const Jumbotron = () => {
                 color: theme.palette.success.contrastText,
                 my: 4,
                 mx: "auto",
-                width: "50%",
                 borderRadius: 10,
               }}
               href="https://my.forms.app/hackwestxforms/hackwestx-registration-spring23"
@@ -82,7 +96,7 @@ const Jumbotron = () => {
               Register Now!
             </Button>
           </Box>
-        </Box>
+        </Container>
       </Grid>
     </Grid>
   );

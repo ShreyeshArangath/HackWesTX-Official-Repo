@@ -37,7 +37,13 @@ let theme = createTheme({
   },
   typography: {
     fontFamily: "Sofia Sans",
+    h1: {
+      fontFamily: "Bungee",
+    },
     h2: {
+      fontFamily: "Bungee",
+    },
+    h3: {
       fontFamily: "Bungee",
     },
   },
