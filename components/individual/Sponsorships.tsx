@@ -1,25 +1,20 @@
 import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
 import { getStorage, ref as storageRef } from "firebase/storage";
-import { useEffect } from "react";
+import Image from "next/image";
 import { useDownloadURL } from "react-firebase-hooks/storage";
+import flask from "../../assets/flask.svg";
+import Megaphone from "../../assets/megaphone.svg";
+import Recruit from "../../assets/recruit.svg";
 import { fbase } from "../../lib/Firebase";
-//import Packet from "../../assets/HWT_Sponsorship_Packet_22.pdf";
 import styles from "../../styles/Home.module.css";
 
 const storage = getStorage(fbase);
 
 const Sponsorships = () => {
-  const [value, loading, error] = useDownloadURL(
-    storageRef(
-      storage,
-      `/assets/HWT_Sponsorship_Packet_22.pdf`
-    )
+  const [value] = useDownloadURL(
+    storageRef(storage, `public/HWT_Sponsorship_Packet_22.pdf`)
   );
   const theme = useTheme();
-
-  useEffect(() => {
-    `value - ${value}`;
-  }, [value, loading]);
 
   return (
     <Grid
@@ -27,6 +22,8 @@ const Sponsorships = () => {
       sx={{
         backgroundColor: "black",
         color: theme.palette.primary.contrastText,
+        py: { xs: 5, md: 7, lg: 12 },
+        my: 10,
       }}
     >
       <Grid item xs={12} my={5}>
@@ -65,15 +62,50 @@ const Sponsorships = () => {
               borderRadius: 10,
             }}
             href={value ? value : ""}
-            type="submit"
-            disabled={loading}
+            disabled={!value}
             target="_blank"
-            download="HWT_Sponsorship_Packet_22.pdf"
             referrerPolicy="no-referrer"
           >
-            Sponsor Packet ✨
+            ✨ Sponsor Packet ✨
           </Button>
         </Box>
+      </Grid>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-around"
+        rowSpacing={5}
+        px={4}
+      >
+        <Grid item xs={12} md={6} lg={4} mx="auto">
+          <Box mx="auto" my={5} width={250} height={250}>
+            <Image
+              src={Megaphone}
+              alt="Megaphone Icon"
+              width={250}
+              height={250}
+            />
+          </Box>
+          <Typography variant="h5" textAlign="center">
+            Gain Awareness
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={6} lg={4} mx="auto">
+          <Box mx="auto" my={5} width={250} height={250}>
+            <Image src={Recruit} alt="Recruit Icon" width={250} height={250} />
+          </Box>
+          <Typography variant="h5" textAlign="center">
+            Recruit Developers
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={6} lg={4} mx="auto">
+          <Box mx="auto" my={5} width={250} height={250}>
+            <Image src={flask} alt="Flask Icon" width={250} height={250} />
+          </Box>
+          <Typography variant="h5" textAlign="center">
+            Test APIs
+          </Typography>
+        </Grid>
       </Grid>
     </Grid>
   );
