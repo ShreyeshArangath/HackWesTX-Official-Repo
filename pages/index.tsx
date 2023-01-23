@@ -2,10 +2,12 @@ import { Card, CardContent, Divider, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Link from "next/link";
 import flexRadio from "../assets/sponsors/flexradio.png";
+import FAQ from "../components/individual/FAQ";
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
 import Sponsorships from "../components/individual/Sponsorships";
 import StudentSlideshow from "../components/individual/StudentSlideshow";
+import { faqs } from "../lib/constants";
 import styles from "../styles/Home.module.css";
 
 const HomePage = () => {
@@ -26,18 +28,20 @@ const HomePage = () => {
             mx: "auto",
           }}
         >
-          <CardContent
-            sx={{
-              maxHeight: "25vh",
-              overflow: "auto",
-              overflowX: "none",
-            }}
-          >
+          <CardContent>
             <Typography fontStyle="oblique" variant="h5">
               Who are we?
             </Typography>
-            <Divider orientation="horizontal" sx={{ px: 3 }} />
-            <Typography variant="body1" textAlign="left">
+            <Divider orientation="horizontal" sx={{ px: 3, m: 1 }} />
+            <Typography
+              variant="body1"
+              textAlign="left"
+              sx={{
+                maxHeight: "22vh",
+                overflow: "auto",
+                overflowX: "none",
+              }}
+            >
               HackWesTX III is Texas Tech University&apos;s second student-run
               hackathon! This year, the hackathon will start Saturday, February
               25th and end Sunday, February 26th. The hackathon will last 24
@@ -60,18 +64,20 @@ const HomePage = () => {
             mx: "auto",
           }}
         >
-          <CardContent
-            sx={{
-              maxHeight: "25vh",
-              overflow: "auto",
-              overflowX: "none",
-            }}
-          >
+          <CardContent>
             <Typography fontStyle="oblique" variant="h5">
               But why tho?
             </Typography>
-            <Divider orientation="horizontal" sx={{ px: 3 }} />
-            <Typography variant="body1" textAlign="left">
+            <Divider orientation="horizontal" sx={{ px: 3, m: 1 }} />
+            <Typography
+              variant="body1"
+              textAlign="left"
+              sx={{
+                maxHeight: "22vh",
+                overflow: "auto",
+                overflowX: "none",
+              }}
+            >
               We are developers who encourage each other to do better. It&apos;s
               not just about writing code or programming hardware, it&apos;s
               about making a positive impact in our community. We want to
@@ -122,6 +128,32 @@ const HomePage = () => {
         target="_blank"
       />
       <Sponsorships />
+      <Grid
+        item
+        xs={12}
+        height="20vh"
+        display="flex"
+        justifyContent="space-around"
+      >
+        <Typography
+          variant="h4"
+          textAlign="center"
+          className={styles.glitch}
+          my="auto"
+        >
+          Frequently Asked Questions
+        </Typography>
+      </Grid>
+      <Grid
+        container
+        justifyContent="space-around"
+        alignItems="center"
+        direction="row"
+      >
+        {faqs.map((faq) => (
+          <FAQ heading={faq.heading} body={faq.body} key={faq.heading} />
+        ))}
+      </Grid>
     </Grid>
   );
 };
