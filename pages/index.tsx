@@ -1,14 +1,6 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Divider,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Card, CardContent, Divider, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Link from "next/link";
-import Countdown from "react-countdown";
 import flexRadio from "../assets/sponsors/flexradio.png";
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
@@ -89,11 +81,8 @@ const HomePage = () => {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={12} my={5} px="auto">
-        <Countdown
-          date={new Date("February 25, 2023 08:00:00")}
-          renderer={HWTCountdown}
-        />
+      <Grid item xs={12} mt={10} px="auto">
+        <HWTCountdown />
       </Grid>
       <Grid item xs={12} height="80vh" display="flex" alignContent="center">
         <StudentSlideshow />
