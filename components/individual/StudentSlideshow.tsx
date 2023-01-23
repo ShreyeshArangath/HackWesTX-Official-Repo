@@ -4,21 +4,21 @@ import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
 import { Box, Card } from "@mui/material";
 import Image from "next/image";
-import photo1 from "../../assets/pastphotos/1.jpg";
-import photo11 from "../../assets/pastphotos/11.jpg";
-import photo12 from "../../assets/pastphotos/12.jpg";
-import photo13 from "../../assets/pastphotos/13.jpg";
-import photo15 from "../../assets/pastphotos/15.jpg";
-import photo16 from "../../assets/pastphotos/16.jpg";
-import photo17 from "../../assets/pastphotos/17.jpg";
-import photo18 from "../../assets/pastphotos/18.jpg";
-import photo2 from "../../assets/pastphotos/2.jpg";
-import photo3 from "../../assets/pastphotos/3.jpg";
-import photo4 from "../../assets/pastphotos/4.jpg";
-import photo5 from "../../assets/pastphotos/5.jpg";
-import photo6 from "../../assets/pastphotos/6.jpg";
-import photo7 from "../../assets/pastphotos/7.jpg";
-import photo8 from "../../assets/pastphotos/8.jpg";
+import photo1 from "/pastphotos/1.jpg";
+import photo11 from "/pastphotos/11.jpg";
+import photo12 from "/pastphotos/12.jpg";
+import photo13 from "/pastphotos/13.jpg";
+import photo15 from "/pastphotos/15.jpg";
+import photo16 from "/pastphotos/16.jpg";
+import photo17 from "/pastphotos/17.jpg";
+import photo18 from "/pastphotos/18.jpg";
+import photo2 from "/pastphotos/2.jpg";
+import photo3 from "/pastphotos/3.jpg";
+import photo4 from "/pastphotos/4.jpg";
+import photo5 from "/pastphotos/5.jpg";
+import photo6 from "/pastphotos/6.jpg";
+import photo7 from "/pastphotos/7.jpg";
+import photo8 from "/pastphotos/8.jpg";
 
 const StudentSlideshow = () => {
   const plugins = [
