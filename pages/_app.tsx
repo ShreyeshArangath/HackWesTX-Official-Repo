@@ -34,14 +34,21 @@ let theme = createTheme({
     secondary: {
       main: "#A63D93",
     },
-    background: {
-      paper: "#f7f4f0",
-    },
   },
   typography: {
     fontFamily: "Sofia Sans",
-    subtitle2: {
-      fontFamily: "Press Start 2P",
+    h1: {
+      fontFamily: "Bungee",
+    },
+    h2: {
+      fontFamily: "Bungee",
+    },
+  },
+  components: {
+    MuiUseMediaQuery: {
+      defaultProps: {
+        noSsr: true,
+      },
     },
   },
 });
