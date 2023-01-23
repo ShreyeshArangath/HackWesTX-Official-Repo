@@ -18,7 +18,7 @@ import styles from "../styles/Home.module.css";
 
 const HomePage = () => {
   return (
-    <Grid container>
+    <Grid container overflow="clip">
       <Jumbotron />
       <Grid item xs={12} my={4}>
         <Card
@@ -34,15 +34,6 @@ const HomePage = () => {
             mx: "auto",
           }}
         >
-          <CardHeader
-            title="Who are we?"
-            component={Typography}
-            fontStyle="oblique"
-            titleTypographyProps={{
-              variant: "h5",
-            }}
-          />
-          <Divider orientation="horizontal" sx={{ px: 3 }} />
           <CardContent
             sx={{
               maxHeight: "25vh",
@@ -50,6 +41,10 @@ const HomePage = () => {
               overflowX: "none",
             }}
           >
+            <Typography fontStyle="oblique" variant="h5">
+              Who are we?
+            </Typography>
+            <Divider orientation="horizontal" sx={{ px: 3 }} />
             <Typography variant="body1" textAlign="left">
               HackWesTX III is Texas Tech University&apos;s second student-run
               hackathon! This year, the hackathon will start Saturday, February
@@ -73,15 +68,6 @@ const HomePage = () => {
             mx: "auto",
           }}
         >
-          <CardHeader
-            title="But why tho?"
-            component={Typography}
-            fontStyle="oblique"
-            titleTypographyProps={{
-              variant: "h5",
-            }}
-          />
-          <Divider orientation="horizontal" sx={{ px: 3 }} />
           <CardContent
             sx={{
               maxHeight: "25vh",
@@ -89,7 +75,11 @@ const HomePage = () => {
               overflowX: "none",
             }}
           >
-            <Typography variant="body1" textAlign="left" sx={{}}>
+            <Typography fontStyle="oblique" variant="h5">
+              But why tho?
+            </Typography>
+            <Divider orientation="horizontal" sx={{ px: 3 }} />
+            <Typography variant="body1" textAlign="left">
               We are developers who encourage each other to do better. It&apos;s
               not just about writing code or programming hardware, it&apos;s
               about making a positive impact in our community. We want to
@@ -102,7 +92,6 @@ const HomePage = () => {
       <Grid item xs={12} my={5} px="auto">
         <Countdown
           date={new Date("February 25, 2023 08:00:00")}
-          className={styles.glitch}
           renderer={HWTCountdown}
         />
       </Grid>

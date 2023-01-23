@@ -1,9 +1,25 @@
 import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
-import Packet from "../../assets/HWT_Sponsorship_Packet_22.pdf";
+import { getStorage, ref as storageRef } from "firebase/storage";
+import { useEffect } from "react";
+import { useDownloadURL } from "react-firebase-hooks/storage";
+import { fbase } from "../../lib/Firebase";
+//import Packet from "../../assets/HWT_Sponsorship_Packet_22.pdf";
 import styles from "../../styles/Home.module.css";
 
+const storage = getStorage(fbase);
+
 const Sponsorships = () => {
+  const [value, loading, error] = useDownloadURL(
+    storageRef(
+      storage,
+      `/assets/HWT_Sponsorship_Packet_22.pdf`
+    )
+  );
   const theme = useTheme();
+
+  useEffect(() => {
+    `value - ${value}`;
+  }, [value, loading]);
 
   return (
     <Grid
@@ -48,8 +64,9 @@ const Sponsorships = () => {
               mx: "auto",
               borderRadius: 10,
             }}
-            href={Packet}
+            href={value ? value : ""}
             type="submit"
+            disabled={loading}
             target="_blank"
             download="HWT_Sponsorship_Packet_22.pdf"
             referrerPolicy="no-referrer"

@@ -13,11 +13,12 @@ const HWTCountdown = (props: any) => {
       spacing={[2, 3, 4, 5, 6]}
       alignItems="center"
       justifyContent="center"
+      className={styles.glitch}
       color="#055215"
       my={4}
     >
       <Box>
-        <Typography variant="h2" textAlign="center" className={styles.glitch}>
+        <Typography variant="h2" textAlign="center">
           {days}
         </Typography>
         <Typography variant="h6" textAlign="center" color="#6acd75">
@@ -25,7 +26,7 @@ const HWTCountdown = (props: any) => {
         </Typography>
       </Box>
       <Box>
-        <Typography variant="h2" textAlign="center" className={styles.glitch}>
+        <Typography variant="h2" textAlign="center">
           {hours}
         </Typography>
         <Typography variant="h6" textAlign="center" color="#6acd75">
@@ -33,7 +34,7 @@ const HWTCountdown = (props: any) => {
         </Typography>
       </Box>
       <Box>
-        <Typography variant="h2" textAlign="center" className={styles.glitch}>
+        <Typography variant="h2" textAlign="center">
           {minutes}
         </Typography>
         <Typography variant="h6" textAlign="center" color="#6acd75">
@@ -41,7 +42,7 @@ const HWTCountdown = (props: any) => {
         </Typography>
       </Box>
       <Box>
-        <Typography variant="h2" textAlign="center" className={styles.glitch}>
+        <Typography variant="h2" textAlign="center">
           {seconds}
         </Typography>
         <Typography variant="h6" textAlign="center" color="#6acd75">
