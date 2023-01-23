@@ -2,9 +2,9 @@ import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
 import { getStorage, ref as storageRef } from "firebase/storage";
 import Image from "next/image";
 import { useDownloadURL } from "react-firebase-hooks/storage";
-import flask from "../../assets/flask.svg";
-import Megaphone from "../../assets/megaphone.svg";
-import Recruit from "../../assets/recruit.svg";
+import flask from "../../assets/icons/flask.svg";
+import Megaphone from "../../assets/icons/megaphone.svg";
+import Recruit from "../../assets/icons/recruit.svg";
 import { fbase } from "../../lib/Firebase";
 import styles from "../../styles/Home.module.css";
 

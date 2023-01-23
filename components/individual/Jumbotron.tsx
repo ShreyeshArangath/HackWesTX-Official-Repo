@@ -7,7 +7,7 @@ import {
   useTheme
 } from "@mui/material";
 import Image from "next/image";
-import Logo from "../../assets/screen.svg";
+import Logo from "../../assets/icons/screen.svg";
 import styles from "../../styles/Home.module.css";
 
 const Jumbotron = () => {
