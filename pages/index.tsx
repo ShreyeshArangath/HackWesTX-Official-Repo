@@ -131,7 +131,7 @@ const HomePage = () => {
       <Grid
         item
         xs={12}
-        height="20vh"
+        height="5vh"
         display="flex"
         justifyContent="space-around"
       >
@@ -149,6 +149,8 @@ const HomePage = () => {
         justifyContent="space-around"
         alignItems="center"
         direction="row"
+        rowSpacing={5}
+        my={3}
       >
         {faqs.map((faq) => (
           <FAQ heading={faq.heading} body={faq.body} key={faq.heading} />
