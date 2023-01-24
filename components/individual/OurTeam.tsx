@@ -1,21 +1,24 @@
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { Grid, IconButton, Typography, useTheme } from "@mui/material";
 import { getStorage, ref as storageRef } from "firebase/storage";
 import { useDownloadURL } from "react-firebase-hooks/storage";
-import Emmanuel from "../../assets/staff/Emmanuel.jpg";
-import Maysen from "../../assets/staff/Maysen.jpg";
-import Shruti from "../../assets/staff/Shruti.jpg";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import Avatar from "@mui/material/Avatar";
+import { Box } from "@mui/system";
 import { fbase } from "../../lib/Firebase";
 import styles from "../../styles/Home.module.css";
-import { Box } from "@mui/system";
 
 const storage = getStorage(fbase);
 
 const OurTeam = () => {
-  const [value] = useDownloadURL(
-    storageRef(storage, `public/HWT_Sponsorship_Packet.pdf`)
+  const [Shruti] = useDownloadURL(
+    storageRef(storage, `public/staff/Shruti.jpg`)
+  );
+  const [Maysen] = useDownloadURL(
+    storageRef(storage, `public/staff/Maysen.jpg`)
+  );
+  const [Emmanuel] = useDownloadURL(
+    storageRef(storage, `public/staff/Emmanuel.jpg`)
   );
   const theme = useTheme();
 
@@ -46,15 +49,15 @@ const OurTeam = () => {
             sx={{
               mx: "auto",
               my: 5,
-              width: { xs: 175, sm: 215, md: 250 },
-              height: { xs: 175, sm: 215, md: 250 },
+              width: { xs: 175, sm: 215, md: 250, lg: 300 },
+              height: { xs: 175, sm: 215, md: 250, lg: 300 },
               objectPosition: "center 15%",
               ".MuiAvatar-img": { objectPosition: "center 15%" },
               borderStyle: "solid",
               borderColor: "gainsboro",
               borderWidth: 3,
             }}
-            src={Shruti.src}
+            src={Shruti}
             alt="Shruti Nagawekar"
           />
           <Box display="flex" justifyContent="center" alignItems="center">
@@ -79,15 +82,15 @@ const OurTeam = () => {
             sx={{
               mx: "auto",
               my: 5,
-              width: { xs: 175, sm: 215, md: 250 },
-              height: { xs: 175, sm: 215, md: 250 },
+              width: { xs: 175, sm: 215, md: 250, lg: 300 },
+              height: { xs: 175, sm: 215, md: 250, lg: 300 },
               objectPosition: "center 15%",
               ".MuiAvatar-img": { objectPosition: "center 15%" },
               borderStyle: "solid",
               borderColor: "gainsboro",
               borderWidth: 3,
             }}
-            src={Maysen.src}
+            src={Maysen}
             alt="Maysen Brown"
           />
           <Box display="flex" justifyContent="center" alignItems="center">
@@ -112,15 +115,15 @@ const OurTeam = () => {
             sx={{
               mx: "auto",
               my: 5,
-              width: { xs: 175, sm: 215, md: 250 },
-              height: { xs: 175, sm: 215, md: 250 },
+              width: { xs: 175, sm: 215, md: 250, lg: 300 },
+              height: { xs: 175, sm: 215, md: 250, lg: 300 },
               objectPosition: "center 15%",
               ".MuiAvatar-img": { objectPosition: "center 15%" },
               borderStyle: "solid",
               borderColor: "gainsboro",
               borderWidth: 3,
             }}
-            src={Emmanuel.src}
+            src={Emmanuel}
             alt="Emmanuel Camacho"
           />
           <Box display="flex" justifyContent="center" alignItems="center">
