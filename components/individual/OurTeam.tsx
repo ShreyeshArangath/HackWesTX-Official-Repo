@@ -1,5 +1,5 @@
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { Grid, IconButton, Typography, useTheme } from "@mui/material";
+import { Grid, IconButton, Paper, Typography, useTheme } from "@mui/material";
 import { getStorage, ref as storageRef } from "firebase/storage";
 import { useDownloadURL } from "react-firebase-hooks/storage";
 
@@ -26,7 +26,7 @@ const OurTeam = () => {
     <Grid
       container
       sx={{
-        backgroundColor: "black",
+        backgroundColor: theme.palette.primary.dark,
         color: theme.palette.primary.contrastText,
         py: { xs: 5, md: 7, lg: 12 },
         my: 10,
@@ -46,7 +46,10 @@ const OurTeam = () => {
       >
         <Grid item xs={12} md={6} lg={4} mx="auto">
           <Avatar
+            component={Paper}
+            elevation={5}
             sx={{
+              "&:hover": { boxShadow: 20 },
               mx: "auto",
               my: 5,
               width: { xs: 175, sm: 215, md: 250, lg: 300 },
@@ -79,7 +82,10 @@ const OurTeam = () => {
         </Grid>
         <Grid item xs={12} md={6} lg={4} mx="auto">
           <Avatar
+            component={Paper}
+            elevation={5}
             sx={{
+              "&:hover": { boxShadow: 20 },
               mx: "auto",
               my: 5,
               width: { xs: 175, sm: 215, md: 250, lg: 300 },
@@ -112,7 +118,10 @@ const OurTeam = () => {
         </Grid>
         <Grid item xs={12} md={6} lg={4} mx="auto">
           <Avatar
+            component={Paper}
+            elevation={5}
             sx={{
+              "&:hover": { boxShadow: 20 },
               mx: "auto",
               my: 5,
               width: { xs: 175, sm: 215, md: 250, lg: 300 },
