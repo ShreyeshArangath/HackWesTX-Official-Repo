@@ -22,7 +22,7 @@ const Footer = () => {
       component="footer"
       justifyContent="center"
       mt={{ xs: 5, sm: 7, md: 10 }}
-      py={4}
+      py={10}
       sx={{
         backgroundColor: theme.palette.primary.dark,
         color: contrastColor,
@@ -31,7 +31,7 @@ const Footer = () => {
       }}
     >
       <Grid item xs={5} my={{ md: "auto", xs: 1 }}>
-        <Typography variant="body1" textAlign="center">
+        <Typography variant="h5" textAlign="center" fontFamily="Bungee">
           Let&apos;s Chat!
         </Typography>
         <Typography
