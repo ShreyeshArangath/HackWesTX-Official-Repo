@@ -18,13 +18,25 @@ const FAQ = (props: FAQ) => {
         }}
       >
         <CardContent>
-          <Typography variant="subtitle1">{props.heading}</Typography>
-          <Typography variant="subtitle1">{props.body}</Typography>
-          {props.guidelines ? (
-            <Link href="http://mlh.io/code-of-conduct">
-              MLH Code of Conduct.
-            </Link>
-          ) : undefined}
+          <Typography variant="h6" textAlign="center" mb={2}>
+            {props.heading}
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              overflowWrap: "break-word",
+              wordWrap: "break-word",
+              wordBreak: "break-word",
+              hyphens: "auto",
+            }}
+          >
+            {props.body}{" "}
+            {props.heading === "Guidelines" ? (
+              <Link href="http://mlh.io/code-of-conduct">
+                MLH Code of Conduct.
+              </Link>
+            ) : undefined}
+          </Typography>
         </CardContent>
       </Card>
     </Grid>
