@@ -5,6 +5,7 @@ import flexRadio from "../assets/sponsors/flexradio.png";
 import FAQ from "../components/individual/FAQ";
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
+import OurTeam from "../components/individual/OurTeam";
 import Sponsorships from "../components/individual/Sponsorships";
 import StudentSlideshow from "../components/individual/StudentSlideshow";
 import { faqs } from "../lib/constants";
@@ -156,6 +157,7 @@ const HomePage = () => {
           <FAQ heading={faq.heading} body={faq.body} key={faq.heading} />
         ))}
       </Grid>
+      <OurTeam />
     </Grid>
   );
 };
