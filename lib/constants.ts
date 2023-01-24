@@ -26,7 +26,6 @@ const faqs = [
   {
     heading: "Guidelines",
     body: "Since we are a MLH partnered event, we require our participants to follow the",
-    guidelines: true,
   },
 ];
 
