@@ -4,7 +4,7 @@ import {
   Container,
   Grid,
   Typography,
-  useTheme
+  useTheme,
 } from "@mui/material";
 import Image from "next/image";
 import Logo from "../../assets/icons/screen.svg";
@@ -19,7 +19,7 @@ const Jumbotron = () => {
       sx={{
         backgroundColor: "black",
         px: 1,
-        py: 5,
+        py: 10,
         mb: 7,
       }}
     >
@@ -66,11 +66,17 @@ const Jumbotron = () => {
             variant="h5"
             textAlign="center"
             color="whitesmoke"
+            mt={{ md: 4 }}
             className={styles.glitch}
           >
             February 25th - February 26th
           </Typography>
-          <Typography variant="h5" textAlign="center" className={styles.glitch}>
+          <Typography
+            variant="h5"
+            textAlign="center"
+            mt={{ mb: 4 }}
+            className={styles.glitch}
+          >
             <span className={styles.tx}>Innovation Hub, Lubbock</span>
           </Typography>
           <Box
