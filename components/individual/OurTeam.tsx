@@ -29,7 +29,7 @@ const OurTeam = () => {
         backgroundColor: theme.palette.primary.dark,
         color: theme.palette.primary.contrastText,
         py: { xs: 5, md: 7, lg: 12 },
-        my: 10,
+        mt: 10,
       }}
     >
       <Grid item xs={12} my={5}>
