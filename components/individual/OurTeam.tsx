@@ -23,6 +23,9 @@ const OurTeam = () => {
   const [Travis] = useDownloadURL(
     storageRef(storage, `public/staff/Travis.jpg`)
   );
+  const [Katrina] = useDownloadURL(
+    storageRef(storage, `public/staff/Katrina.jpg`)
+  );
   const theme = useTheme();
 
   return (
@@ -153,6 +156,42 @@ const OurTeam = () => {
           </Box>
           <Typography variant="h6" textAlign="center">
             Marketing Lead
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={6} lg={4} mx="auto">
+          <Avatar
+            component={Paper}
+            elevation={5}
+            sx={{
+              "&:hover": { boxShadow: 20 },
+              mx: "auto",
+              my: 5,
+              width: { xs: 175, sm: 215, md: 250, lg: 300 },
+              height: { xs: 175, sm: 215, md: 250, lg: 300 },
+              objectPosition: "center 15%",
+              ".MuiAvatar-img": { objectPosition: "center 15%" },
+              borderStyle: "solid",
+              borderColor: "gainsboro",
+              borderWidth: 3,
+            }}
+            src={Katrina}
+            alt="Katrina Hellmann"
+          />
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <Typography variant="h5" textAlign="center">
+              Katrina Hellmann
+            </Typography>
+            <IconButton
+              aria-label="linkedin-link"
+              href="https://www.linkedin.com/in/katrina-hellmann/"
+              target="_blank"
+              color="info"
+            >
+              <OpenInNewIcon />
+            </IconButton>
+          </Box>
+          <Typography variant="h6" textAlign="center">
+            Hacker Experience Lead
           </Typography>
         </Grid>
         <Grid item xs={12} md={6} lg={4} mx="auto">
