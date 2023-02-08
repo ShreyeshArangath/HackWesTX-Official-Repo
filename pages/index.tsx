@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import Head from "next/head";
 import Link from "next/link";
 import flexRadio from "../assets/sponsors/flexradio.png";
+import stemCore from "../assets/sponsors/stemcore2.png";
 import FAQ from "../components/individual/FAQ";
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
@@ -133,6 +134,22 @@ const HomePage = () => {
           }}
           component={Link}
           href="https://www.flexradio.com/"
+          rel="noopener"
+          target="_blank"
+        />
+        <Box
+          sx={{
+            width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
+            backgroundImage: `url(${stemCore.src})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPositionX: "center",
+            backgroundSize: "contain",
+            height: "20vh",
+            mx: "auto",
+            my: 5,
+          }}
+          component={Link}
+          href="https://www.depts.ttu.edu/stem/"
           rel="noopener"
           target="_blank"
         />
