@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 /**
  * @type {LayoutProps} - Pages that will be wrapped by the Navbar and Footer
@@ -16,10 +17,11 @@ type LayoutProps = {
  */
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <main>
-      {children}
+    <>
+      <Navbar />
+      <main>{children}</main>
       <Footer />
-    </main>
+    </>
   );
 };
 
