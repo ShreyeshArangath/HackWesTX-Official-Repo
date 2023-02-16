@@ -26,6 +26,7 @@ const OurTeam = () => {
   const [Katrina] = useDownloadURL(
     storageRef(storage, `public/staff/Katrina.jpg`)
   );
+  const [Roy] = useDownloadURL(storageRef(storage, `public/staff/Roy.jpg`));
   const theme = useTheme();
 
   return (
@@ -228,6 +229,42 @@ const OurTeam = () => {
           </Box>
           <Typography variant="h6" textAlign="center">
             Logistics Lead
+          </Typography>
+        </Grid>
+        <Grid item xs={12} md={6} lg={4} mx="auto">
+          <Avatar
+            component={Paper}
+            elevation={5}
+            sx={{
+              "&:hover": { boxShadow: 20 },
+              mx: "auto",
+              my: 5,
+              width: { xs: 175, sm: 215, md: 250, lg: 300 },
+              height: { xs: 175, sm: 215, md: 250, lg: 300 },
+              objectPosition: "center 15%",
+              ".MuiAvatar-img": { objectPosition: "center 15%" },
+              borderStyle: "solid",
+              borderColor: "gainsboro",
+              borderWidth: 3,
+            }}
+            src={Roy}
+            alt="Arnob Roy"
+          />
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <Typography variant="h5" textAlign="center">
+              Arnob Roy
+            </Typography>
+            <IconButton
+              aria-label="linkedin-link"
+              href="https://www.linkedin.com/in/arnob-roy-58762569/"
+              target="_blank"
+              color="info"
+            >
+              <OpenInNewIcon />
+            </IconButton>
+          </Box>
+          <Typography variant="h6" textAlign="center">
+            Finance Lead
           </Typography>
         </Grid>
       </Grid>
