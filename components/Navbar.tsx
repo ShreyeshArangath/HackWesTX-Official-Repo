@@ -18,7 +18,6 @@ import {
 } from "@mui/material";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
-import Schedule from "../pages/schedule";
 import styles from "../styles/Home.module.css";
 
 /**
@@ -28,8 +27,8 @@ import styles from "../styles/Home.module.css";
 const Navbar = () => {
   const router = useRouter(); // Router for switching pages in React
 
-  const pages = ["Home", "Schedule", "Sponsors", "Hackers"];
-  const links = ["/", "/schedule", "/sponsors", "/hackers"];
+  const pages = ["Home"];
+  const links = ["/"];
 
   //Media query to check if we're below md viewport width
   const theme = useTheme();
@@ -71,13 +70,11 @@ const Navbar = () => {
         }}
       >
         {matches ? (
-          <Grid item xs={12}>
-            <AppBar position="static">
+          <Grid item xs={12} display="flex">
+            <AppBar position="static" color="primary">
               <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                  <Box
-                    sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-                  >
+                <Toolbar>
+                  <Box sx={{ flexGrow: 1, display: { sm: "flex" } }}>
                     <IconButton
                       size="large"
                       aria-label="account of current user"
@@ -144,72 +141,67 @@ const Navbar = () => {
           <Grid
             item
             xs={12}
-            sx={{ flexGrow: router.pathname === "/admin" ? 1 : undefined }}
+            sx={{
+              display: { xs: "none", md: "flex" },
+            }}
           >
-            <AppBar position="static">
-              <Container maxWidth="xl">
-                <Toolbar
-                  sx={{ justifyContent: "space-evenly", display: "flex" }}
+            <AppBar position="static" color="primary" component="nav">
+              <Toolbar sx={{ justifyContent: "space-between" }}>
+                <IconButton
+                  edge="start"
+                  onClick={() => {
+                    router.push("/");
+                    handleCloseNavMenu();
+                  }}
+                  sx={{ my: 2 }}
                 >
-                  <Button
-                    onClick={() => {
-                      router.push("/");
-                      handleCloseNavMenu();
-                    }}
-                    sx={{ my: 2, display: "block" }}
+                  <Typography
+                    variant="h6"
+                    color="common.white"
+                    fontFamily="Bungee"
+                    component="div"
+                    className={styles.glitch}
                   >
-                    <Typography
-                      variant="h6"
-                      color="common.white"
-                      fontFamily="Bungee"
-                      className={styles.glitch}
+                    HackWesTX
+                  </Typography>
+                </IconButton>
+                <Box
+                  sx={{
+                    display: { xs: "none", md: "flex" },
+                  }}
+                >
+                  {pages.map((page) => (
+                    <Button
+                      key={page}
+                      variant="outlined"
+                      onClick={() => {
+                        router.push(links[pages.indexOf(page)]);
+                        handleCloseNavMenu();
+                      }}
+                      sx={{
+                        my: 2,
+                        color: "white",
+                        "&.MuiButton-outlinedPrimary": {
+                          borderColor:
+                            router.pathname == links[pages.indexOf(page)]
+                              ? theme.palette.secondary.main
+                              : theme.palette.primary.main,
+                        },
+                      }}
                     >
-                      HackWesTX
-                    </Typography>
-                  </Button>
-                  <Box
-                    sx={{
-                      flexGrow: 1,
-                      display: { xs: "none", md: "flex" },
-                      flexDirection:
-                        router.pathname === "/admin"
-                          ? "row-reverse"
-                          : undefined,
-                    }}
-                  >
-                    {router.pathname === "/admin" ? (
-                      <Button
-                        onClick={handleSignOut}
-                        sx={{ my: 2, color: "white" }}
-                      >
-                        Sign Out
-                      </Button>
-                    ) : (
-                      pages.map((page) => (
-                        <Button
-                          key={page}
-                          onClick={() => {
-                            router.push(links[pages.indexOf(page)]);
-                            handleCloseNavMenu();
-                          }}
-                          sx={{
-                            my: 2,
-                            color: "white",
-                            display: "block",
-                            textDecorationLine:
-                              router.pathname == links[pages.indexOf(page)]
-                                ? "underline"
-                                : undefined,
-                            textDecorationColor: "goldenrod",
-                          }}
-                        >
-                          {page}
-                        </Button>
-                      ))
-                    )}
-                  </Box>
-                </Toolbar>
-              </Container>
+                      {page}
+                    </Button>
+                  ))}
+                  {router.pathname === "/hackers" ? (
+                    <Button
+                      onClick={handleSignOut}
+                      sx={{ my: 2, color: "white" }}
+                    >
+                      Sign Out
+                    </Button>
+                  ) : undefined}
+                </Box>
+              </Toolbar>
             </AppBar>
           </Grid>
         )}

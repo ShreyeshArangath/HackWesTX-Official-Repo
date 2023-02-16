@@ -1,7 +1,15 @@
-import { Card, CardContent, Divider, Grid, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  Divider,
+  Grid,
+  Stack,
+  Typography,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import Head from "next/head";
 import Link from "next/link";
+import trueLogo from "../assets/sponsors/true.png";
 import flexRadio from "../assets/sponsors/flexradio.png";
 import stemCore from "../assets/sponsors/stemcore2.png";
 import FAQ from "../components/individual/FAQ";
@@ -121,38 +129,57 @@ const HomePage = () => {
             Sponsored By
           </Typography>
         </Grid>
-        <Box
-          sx={{
-            width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-            backgroundImage: `url(${flexRadio.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPositionX: "center",
-            backgroundSize: "contain",
-            height: "20vh",
-            mx: "auto",
-            my: 5,
-          }}
-          component={Link}
-          href="https://www.flexradio.com/"
-          rel="noopener"
-          target="_blank"
-        />
-        <Box
-          sx={{
-            width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-            backgroundImage: `url(${stemCore.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPositionX: "center",
-            backgroundSize: "contain",
-            height: "20vh",
-            mx: "auto",
-            my: 5,
-          }}
-          component={Link}
-          href="https://www.depts.ttu.edu/stem/"
-          rel="noopener"
-          target="_blank"
-        />
+        <Stack mx="auto" divider={<Divider orientation="horizontal" />}>
+          <Box
+            sx={{
+              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
+              backgroundImage: `url(${flexRadio.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundSize: "contain",
+              height: "40vh",
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.flexradio.com/"
+            rel="noopener"
+            target="_blank"
+          />
+          <Box
+            sx={{
+              width: { xs: "80vw", sm: "55vw", md: "40vw", lg: "35vw" },
+              backgroundImage: `url(${trueLogo.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundSize: "contain",
+              height: "17vh",
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.depts.ttu.edu/true/"
+            rel="noopener"
+            target="_blank"
+          />
+          <Box
+            sx={{
+              width: { xs: "75vw", sm: "45vw", md: "35vw", lg: "30vw" },
+              backgroundImage: `url(${stemCore.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundSize: "contain",
+              height: "16vh",
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.depts.ttu.edu/stem/"
+            rel="noopener"
+            target="_blank"
+          />
+        </Stack>
+
         <Sponsorships />
         <Grid
           item
