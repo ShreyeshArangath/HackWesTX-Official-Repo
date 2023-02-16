@@ -26,13 +26,29 @@ type AppPropsWithLayout = AppProps & {
  * @remark Premade components courtesy of MUI
  * @link https://mui.com/
  */
-let theme = createTheme({
+
+const customeTheme = {
   palette: {
     primary: {
       main: "#055215",
     },
+    primarylight: {
+      main: "#09BC8A",
+    },
+    secondarylight: {
+      main: "#055215",
+    },
     secondary: {
-      main: "#A63D93",
+      main: "#F0DCCA",
+    },
+    darker: {
+      main: "#004346",
+    },
+    lightaccent: {
+      main: "#4BC7BF",
+    },
+    darkaccent: {
+      main: "#172A3A",
     },
   },
   typography: {
@@ -51,8 +67,9 @@ let theme = createTheme({
       },
     },
   },
-});
-theme = responsiveFontSizes(theme);
+};
+let theme = createTheme(customeTheme);
+// theme = responsiveFontSizes(theme);
 
 /**
  * @function MyApp
