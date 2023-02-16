@@ -129,7 +129,7 @@ const HomePage = () => {
             Sponsored By
           </Typography>
         </Grid>
-        <Stack mx="auto">
+        <Stack mx="auto" divider={<Divider orientation="horizontal" />}>
           <Box
             sx={{
               width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
