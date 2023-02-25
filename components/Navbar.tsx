@@ -27,8 +27,8 @@ import styles from "../styles/Home.module.css";
 const Navbar = () => {
   const router = useRouter(); // Router for switching pages in React
 
-  const pages = ["Home"];
-  const links = ["/"];
+  const pages = ["Home", "Schedule"];
+  const links = ["/", "/schedule"];
 
   //Media query to check if we're below md viewport width
   const theme = useTheme();

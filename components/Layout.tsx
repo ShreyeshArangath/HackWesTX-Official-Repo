@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
-import Footer from "./Footer";
 import bg from "../assets/WhiteBg.png";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 /**

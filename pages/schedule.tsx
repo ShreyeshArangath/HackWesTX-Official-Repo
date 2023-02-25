@@ -1,5 +1,6 @@
 import { Box, Container, Grid } from "@mui/material";
 import Image from "next/image";
+import Agenda from "../assets/HWTAgenda.png";
 
 const Schedule = () => {
   return (
@@ -15,11 +16,10 @@ const Schedule = () => {
         >
           <Container
             component={Image}
-            src="https://cdn.discordapp.com/attachments/964289397568720907/1078072124285141072/HWTAgenda.png"
-            width={250}
-            height={300}
+            src={Agenda}
             style={{ objectFit: "contain" }}
             sx={{ width: "75vw", height: "50vh" }}
+            quality={100}
             alt="HWT Schedule"
           />
         </Box>
