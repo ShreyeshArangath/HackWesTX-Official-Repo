@@ -17,6 +17,7 @@ const Schedule = () => {
           <Container
             component={Image}
             src={Agenda}
+            blurDataURL={Agenda.blurDataURL}
             style={{ objectFit: "contain" }}
             sx={{ width: "75vw", height: "50vh" }}
             quality={100}
