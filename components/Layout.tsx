@@ -1,4 +1,6 @@
+import { Box } from "@mui/material";
 import React from "react";
+import bg from "../assets/WhiteBg.png";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -19,7 +21,16 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main>
+        <Box
+          sx={{
+            background: `url(${bg.src})`,
+            backgroundRepeat: "repeat",
+          }}
+        >
+          {children}
+        </Box>
+      </main>
       <Footer />
     </>
   );
