@@ -30,14 +30,14 @@ Now that we're back up to date (although a little plain), we can add whatever we
 ### Functional Goals
 
 - [x] - Recreate all elements from the original site
-- [ ] - Make it prettier
+- [-] - Make it prettier
   - [ ] - Something to spice up the [Jumbotron](components/individual/Jumbotron.tsx)
-  - [ ] - Fill up some of the whitespace, whether its juicy css curves or interactive cacti, or anything else
+  - [x] - Fill up some of the whitespace, whether its juicy css curves or interactive cacti, or anything else
 - [ ] - Auth and QR code support (I'll get on that ~ @Guysnacho)
-- [ ] - Responsive navbar/sandwich menu for other pages
+- [-] - Responsive navbar/sandwich menu for other pages
   - [ ] - 1. Distribute content across other pages
-  - [ ] - 2. Add Navbar and simple routing
-  - [ ] - 3. Add routing for authed pages (pages you can only access while logged in)
+  - [x] - 2. Add [Navbar](components/Navbar.tsx) and simple routing
+  - [x] - 3. Add routing for [authed pages](pages/hackers.tsx) (pages you can only access while logged in)
 
 ### Learning Goals
 
