@@ -1,32 +1,63 @@
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { Grid, IconButton, Paper, Typography, useTheme } from "@mui/material";
-import { getStorage, ref as storageRef } from "firebase/storage";
-import { useDownloadURL } from "react-firebase-hooks/storage";
-
 import Avatar from "@mui/material/Avatar";
 import { Box } from "@mui/system";
-import { fbase } from "../../lib/Firebase";
+import { team2023FallACM, team2023FallHWT } from '../../lib/constants/team-2023-fall'
 import styles from "../../styles/Home.module.css";
 
-const storage = getStorage(fbase);
+type TeamMemberProps = {
+  name: string;
+  role: string;
+  websiteUrl: string | undefined;
+  avatarSrc: any;
+};
+
+const TeamMember = (props: TeamMemberProps) => {
+  console.log(props.name, props.avatarSrc);
+
+  return (
+    <Grid item xs={12} md={6} lg={4} mx="auto">
+      <Avatar
+        component={Paper}
+        elevation={5}
+        sx={{
+          "&:hover": { boxShadow: 20 },
+          mx: "auto",
+          my: 5,
+          width: { xs: 175, sm: 215, md: 250, lg: 300 },
+          height: { xs: 175, sm: 215, md: 250, lg: 300 },
+          objectPosition: "center 15%",
+          ".MuiAvatar-img": { objectPosition: "center 15%" },
+          borderStyle: "solid",
+          borderColor: "#dcdcdc",
+          borderWidth: 3,
+        }}
+        src={props.avatarSrc?.src}
+        alt={props.name}
+      />
+      <Box display="flex" justifyContent="center" alignItems="center">
+        <Typography variant="h5" textAlign="center">
+          {props.name}
+        </Typography>
+        {props.websiteUrl &&
+          <IconButton
+            aria-label="linkedin-link"
+            href={props.websiteUrl}
+            target="_blank"
+            color="info"
+          >
+            <OpenInNewIcon />
+          </IconButton>
+        }
+      </Box>
+      <Typography variant="h6" textAlign="center">
+        {props.role}
+      </Typography>
+    </Grid>
+  )
+}
 
 const OurTeam = () => {
-  const [Shruti] = useDownloadURL(
-    storageRef(storage, `public/staff/Shruti.jpg`)
-  );
-  const [Maysen] = useDownloadURL(
-    storageRef(storage, `public/staff/Maysen.jpg`)
-  );
-  const [Emmanuel] = useDownloadURL(
-    storageRef(storage, `public/staff/Emmanuel.jpg`)
-  );
-  const [Travis] = useDownloadURL(
-    storageRef(storage, `public/staff/Travis.jpg`)
-  );
-  const [Katrina] = useDownloadURL(
-    storageRef(storage, `public/staff/Katrina.jpg`)
-  );
-  const [Roy] = useDownloadURL(storageRef(storage, `public/staff/Roy.jpg`));
   const theme = useTheme();
 
   return (
@@ -41,7 +72,7 @@ const OurTeam = () => {
     >
       <Grid item xs={12} my={5}>
         <Typography textAlign="center" variant="h3" className={styles.glitch}>
-          Our Team
+          HackWesTX Team
         </Typography>
       </Grid>
       <Grid
@@ -51,222 +82,21 @@ const OurTeam = () => {
         rowSpacing={4}
         px={4}
       >
-        <Grid item xs={12} md={6} lg={4} mx="auto">
-          <Avatar
-            component={Paper}
-            elevation={5}
-            sx={{
-              "&:hover": { boxShadow: 20 },
-              mx: "auto",
-              my: 5,
-              width: { xs: 175, sm: 215, md: 250, lg: 300 },
-              height: { xs: 175, sm: 215, md: 250, lg: 300 },
-              objectPosition: "center 15%",
-              ".MuiAvatar-img": { objectPosition: "center 15%" },
-              borderStyle: "solid",
-              borderColor: "gainsboro",
-              borderWidth: 3,
-            }}
-            src={Shruti}
-            alt="Shruti Nagawekar"
-          />
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <Typography variant="h5" textAlign="center">
-              Shruti Nagawekar
-            </Typography>
-            <IconButton
-              aria-label="linkedin-link"
-              href="https://www.linkedin.com/in/shruti-nagawekar/"
-              target="_blank"
-              color="info"
-            >
-              <OpenInNewIcon />
-            </IconButton>
-          </Box>
-          <Typography variant="h6" textAlign="center">
-            HackwesTX Lead
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4} mx="auto">
-          <Avatar
-            component={Paper}
-            elevation={5}
-            sx={{
-              "&:hover": { boxShadow: 20 },
-              mx: "auto",
-              my: 5,
-              width: { xs: 175, sm: 215, md: 250, lg: 300 },
-              height: { xs: 175, sm: 215, md: 250, lg: 300 },
-              objectPosition: "center 15%",
-              ".MuiAvatar-img": { objectPosition: "center 15%" },
-              borderStyle: "solid",
-              borderColor: "gainsboro",
-              borderWidth: 3,
-            }}
-            src={Maysen}
-            alt="Maysen Brown"
-          />
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <Typography variant="h5" textAlign="center">
-              Maysen Brown
-            </Typography>
-            <IconButton
-              aria-label="linkedin-link"
-              href="https://www.linkedin.com/in/maysen-brown-083494181/"
-              target="_blank"
-              color="info"
-            >
-              <OpenInNewIcon />
-            </IconButton>
-          </Box>
-          <Typography variant="h6" textAlign="center">
-            Sponsorship Lead
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4} mx="auto">
-          <Avatar
-            component={Paper}
-            elevation={5}
-            sx={{
-              "&:hover": { boxShadow: 20 },
-              mx: "auto",
-              my: 5,
-              width: { xs: 175, sm: 215, md: 250, lg: 300 },
-              height: { xs: 175, sm: 215, md: 250, lg: 300 },
-              objectPosition: "center 15%",
-              ".MuiAvatar-img": { objectPosition: "center 15%" },
-              borderStyle: "solid",
-              borderColor: "gainsboro",
-              borderWidth: 3,
-            }}
-            src={Emmanuel}
-            alt="Emmanuel Camacho"
-          />
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <Typography variant="h5" textAlign="center">
-              Emmanuel Camacho
-            </Typography>
-            <IconButton
-              aria-label="linkedin-link"
-              href="https://www.linkedin.com/in/emmanuel-camacho-/"
-              target="_blank"
-              color="info"
-            >
-              <OpenInNewIcon />
-            </IconButton>
-          </Box>
-          <Typography variant="h6" textAlign="center">
-            Marketing Lead
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4} mx="auto">
-          <Avatar
-            component={Paper}
-            elevation={5}
-            sx={{
-              "&:hover": { boxShadow: 20 },
-              mx: "auto",
-              my: 5,
-              width: { xs: 175, sm: 215, md: 250, lg: 300 },
-              height: { xs: 175, sm: 215, md: 250, lg: 300 },
-              objectPosition: "center 15%",
-              ".MuiAvatar-img": { objectPosition: "center 15%" },
-              borderStyle: "solid",
-              borderColor: "gainsboro",
-              borderWidth: 3,
-            }}
-            src={Katrina}
-            alt="Katrina Hellmann"
-          />
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <Typography variant="h5" textAlign="center">
-              Katrina Hellmann
-            </Typography>
-            <IconButton
-              aria-label="linkedin-link"
-              href="https://www.linkedin.com/in/katrina-hellmann/"
-              target="_blank"
-              color="info"
-            >
-              <OpenInNewIcon />
-            </IconButton>
-          </Box>
-          <Typography variant="h6" textAlign="center">
-            Hacker Experience Lead
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4} mx="auto">
-          <Avatar
-            component={Paper}
-            elevation={5}
-            sx={{
-              "&:hover": { boxShadow: 20 },
-              mx: "auto",
-              my: 5,
-              width: { xs: 175, sm: 215, md: 250, lg: 300 },
-              height: { xs: 175, sm: 215, md: 250, lg: 300 },
-              objectPosition: "center 15%",
-              ".MuiAvatar-img": { objectPosition: "center 15%" },
-              borderStyle: "solid",
-              borderColor: "gainsboro",
-              borderWidth: 3,
-            }}
-            src={Travis}
-            alt="Travis Libre"
-          />
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <Typography variant="h5" textAlign="center">
-              Travis Libre
-            </Typography>
-            <IconButton
-              aria-label="linkedin-link"
-              href="https://www.linkedin.com/in/travis-libre-163328262/"
-              target="_blank"
-              color="info"
-            >
-              <OpenInNewIcon />
-            </IconButton>
-          </Box>
-          <Typography variant="h6" textAlign="center">
-            Logistics Lead
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4} mx="auto">
-          <Avatar
-            component={Paper}
-            elevation={5}
-            sx={{
-              "&:hover": { boxShadow: 20 },
-              mx: "auto",
-              my: 5,
-              width: { xs: 175, sm: 215, md: 250, lg: 300 },
-              height: { xs: 175, sm: 215, md: 250, lg: 300 },
-              objectPosition: "center 15%",
-              ".MuiAvatar-img": { objectPosition: "center 15%" },
-              borderStyle: "solid",
-              borderColor: "gainsboro",
-              borderWidth: 3,
-            }}
-            src={Roy}
-            alt="Arnob Roy"
-          />
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <Typography variant="h5" textAlign="center">
-              Arnob Roy
-            </Typography>
-            <IconButton
-              aria-label="linkedin-link"
-              href="https://www.linkedin.com/in/arnob-roy-58762569/"
-              target="_blank"
-              color="info"
-            >
-              <OpenInNewIcon />
-            </IconButton>
-          </Box>
-          <Typography variant="h6" textAlign="center">
-            Finance Lead
-          </Typography>
-        </Grid>
+        {team2023FallHWT.map((member, index) => <TeamMember key={index} name={member.name} role={member.role} websiteUrl={member.websiteUrl} avatarSrc={member.avatarSrc} />)}
+      </Grid>
+      <Grid item xs={12} my={5}>
+        <Typography textAlign="center" variant="h3" className={styles.glitch}>
+          TTU ACM Chapter Officers
+        </Typography>
+      </Grid>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-around"
+        rowSpacing={4}
+        px={4}
+      >
+        {team2023FallACM.map((member, index) => <TeamMember key={index} name={member.name} role={member.role} websiteUrl={member.websiteUrl} avatarSrc={member.avatarSrc} />)}
       </Grid>
     </Grid>
   );

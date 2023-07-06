@@ -1,4 +1,4 @@
-const faqs = [
+const faq = [
   {
     heading: "Is the site gonna change?",
     body: "Most definitely! We're working behind the scenes to update the site to something more recent and functional. Hopefully with QR codes and on-site interactions. 😌",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     heading: "Can I register in advance?",
-    body: "You can! RIGHT NOW!!",
+    body: "You can! We will open up registrations soon.",
   },
   {
     heading: "Guidelines",
@@ -29,4 +29,4 @@ const faqs = [
   },
 ];
 
-export { faqs };
+export { faq };
