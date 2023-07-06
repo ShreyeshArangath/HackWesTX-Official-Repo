@@ -18,7 +18,7 @@ import Jumbotron from "../components/individual/Jumbotron";
 import OurTeam from "../components/individual/OurTeam";
 import Sponsorships from "../components/individual/Sponsorships";
 import StudentSlideshow from "../components/individual/StudentSlideshow";
-import { faqs } from "../lib/constants";
+import { faq } from "../lib/constants/faq";
 import styles from "../styles/Home.module.css";
 
 const HomePage = () => {
@@ -59,9 +59,9 @@ const HomePage = () => {
                   overflowX: "none",
                 }}
               >
-                HackWesTX III is Texas Tech University&apos;s second student-run
+                HackWesTX IV is Texas Tech University&apos;s fourth student-run
                 hackathon! This year, the hackathon will start Saturday,
-                February 25th and end Sunday, February 26th. The hackathon will
+                September 16th and end Sunday, September 17th. The hackathon will
                 last 24 hours total!
               </Typography>
             </CardContent>
@@ -205,8 +205,8 @@ const HomePage = () => {
           rowSpacing={5}
           my={3}
         >
-          {faqs.map((faq) => (
-            <FAQ heading={faq.heading} body={faq.body} key={faq.heading} />
+          {faq.map((question) => (
+            <FAQ heading={question.heading} body={question.body} key={question.heading} />
           ))}
         </Grid>
         <OurTeam />
