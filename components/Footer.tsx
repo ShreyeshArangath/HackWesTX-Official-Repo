@@ -58,7 +58,7 @@ const Footer = () => {
             color={contrastColor}
           />
           <IconLink
-            href="https://www.depts.ttu.edu/coe/undergraduate/index_old_2021.php"
+            href="https://www.depts.ttu.edu/coe/undergraduate/"
             child={<SchoolIcon />}
             color={contrastColor}
           />
