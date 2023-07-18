@@ -40,9 +40,9 @@ const Sponsorships = () => {
           }}
         >
           <Typography variant="body1" textAlign="center">
-            Sponsoring a hackathon is a really good way to get in touch with
-            best and brightest students there are within a college community and
-            do so in a casual and convenient environment.
+            Sponsoring a hackathon provides an excellent opportunity to connect
+            with the most talented and ambitious students within a college
+            community, all in a relaxed and convenient environment.
           </Typography>
         </Box>
         <Box
