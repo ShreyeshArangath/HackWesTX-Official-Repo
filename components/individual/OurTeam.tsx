@@ -13,10 +13,8 @@ type TeamMemberProps = {
 };
 
 const TeamMember = (props: TeamMemberProps) => {
-  console.log(props.name, props.avatarSrc);
-
   return (
-    <Grid item xs={12} md={6} lg={4} mx="auto">
+    <Grid item xs={6} md={4} lg={3} mx="auto">
       <Avatar
         component={Paper}
         elevation={5}
@@ -24,8 +22,8 @@ const TeamMember = (props: TeamMemberProps) => {
           "&:hover": { boxShadow: 20 },
           mx: "auto",
           my: 5,
-          width: { xs: 175, sm: 215, md: 250, lg: 300 },
-          height: { xs: 175, sm: 215, md: 250, lg: 300 },
+          width: { xs: 175, sm: 175, md: 175, lg: 175 },
+          height: { xs: 175, sm: 175, md: 175, lg: 175 },
           objectPosition: "center 15%",
           ".MuiAvatar-img": { objectPosition: "center 15%" },
           borderStyle: "solid",
