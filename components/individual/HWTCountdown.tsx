@@ -19,7 +19,7 @@ const HWTCountdown = () => {
           <Typography variant="h2" textAlign="center">
             {date.formatted.days}
           </Typography>
-          <Typography variant="h6" textAlign="center" color="#6acd75">
+          <Typography variant="h6" textAlign="center" color="#32a93f">
             DAYS
           </Typography>
         </Box>
@@ -27,7 +27,7 @@ const HWTCountdown = () => {
           <Typography variant="h2" textAlign="center">
             {date.formatted.hours}
           </Typography>
-          <Typography variant="h6" textAlign="center" color="#6acd75">
+          <Typography variant="h6" textAlign="center" color="#32a93f">
             HOURS
           </Typography>
         </Box>
@@ -35,8 +35,8 @@ const HWTCountdown = () => {
           <Typography variant="h2" textAlign="center">
             {date.formatted.minutes}
           </Typography>
-          <Typography variant="h6" textAlign="center" color="#6acd75">
-            MINTUES
+          <Typography variant="h6" textAlign="center" color="#32a93f">
+            MINUTES
           </Typography>
         </Box>
         <Box>
@@ -47,7 +47,7 @@ const HWTCountdown = () => {
           >
             {date.formatted.seconds}
           </Typography>
-          <Typography variant="h6" textAlign="center" color="#6acd75">
+          <Typography variant="h6" textAlign="center" color="#32a93f">
             SECONDS
           </Typography>
         </Box>
