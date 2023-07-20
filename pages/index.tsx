@@ -9,6 +9,7 @@ import {
 import { Box } from "@mui/system";
 import Head from "next/head";
 import Link from "next/link";
+import innovationHub from "../assets/sponsors/innovationHub.png";
 import trueLogo from "../assets/sponsors/true.png";
 import flexRadio from "../assets/sponsors/flexradio.png";
 import stemCore from "../assets/sponsors/stemcore2.png";
@@ -130,6 +131,22 @@ const HomePage = () => {
           </Typography>
         </Grid>
         <Stack mx="auto" divider={<Divider orientation="horizontal" />}>
+          <Box
+            sx={{
+              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
+              backgroundImage: `url(${innovationHub.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundSize: "contain",
+              height: "40vh",
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.depts.ttu.edu/research/research-park/"
+            rel="noopener"
+            target="_blank"
+          />
           <Box
             sx={{
               width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },

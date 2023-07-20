@@ -49,12 +49,6 @@ export const team2023FallHWT = [
     websiteUrl: undefined,
     avatarSrc: undefined,
   },
-  {
-    name: "Raj",
-    role: "Sponsorship Ambassador",
-    websiteUrl: undefined,
-    avatarSrc: undefined,
-  },
 ];
 
 export const team2023FallACM = [

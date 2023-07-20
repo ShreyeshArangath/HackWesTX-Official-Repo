@@ -86,6 +86,7 @@ const Jumbotron = () => {
             }}
           >
             <Button
+              disableRipple
               variant="contained"
               color="success"
               size="large"
@@ -94,12 +95,13 @@ const Jumbotron = () => {
                 my: 4,
                 mx: "auto",
                 borderRadius: 10,
+                "&.MuiButtonBase-root:hover": {
+                  bgcolor: "#2e7d32",
+                  cursor: "default"
+                }
               }}
-              href="https://my.forms.app/hackwestxforms/hackwestx-registration-spring23"
-              target="_blank"
-              referrerPolicy="no-referrer"
             >
-              Register Now!
+              Registration opens August 23rd!
             </Button>
           </Box>
         </Container>
