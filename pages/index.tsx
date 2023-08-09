@@ -10,9 +10,10 @@ import { Box } from "@mui/system";
 import Head from "next/head";
 import Link from "next/link";
 import innovationHub from "../assets/sponsors/innovationHub.png";
-import trueLogo from "../assets/sponsors/true.png";
-import flexRadio from "../assets/sponsors/flexradio.png";
-import stemCore from "../assets/sponsors/stemcore2.png";
+import tacticalLabs from "../assets/sponsors/TacticalComputingLabs.png";
+import acmChapter from "../assets/sponsors/acm-chapter.jpg";
+import quext from "../assets/sponsors/Quext.png";
+import NexTier from "../assets/sponsors/NexTier_OFS.png";
 import FAQ from "../components/individual/FAQ";
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
@@ -134,7 +135,7 @@ const HomePage = () => {
           <Box
             sx={{
               width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-              backgroundImage: `url(${innovationHub.src})`,
+              backgroundImage: `url(${tacticalLabs.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
               backgroundSize: "contain",
@@ -143,55 +144,71 @@ const HomePage = () => {
               my: 5,
             }}
             component={Link}
-            href="https://www.depts.ttu.edu/research/research-park/"
+            href="https://tactcomplabs.com/"
             rel="noopener"
             target="_blank"
           />
           <Box
             sx={{
               width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-              backgroundImage: `url(${flexRadio.src})`,
+              backgroundImage: `url(${acmChapter.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
               backgroundSize: "contain",
-              height: "40vh",
+              height: "30vh",
               mx: "auto",
               my: 5,
             }}
             component={Link}
-            href="https://www.flexradio.com/"
+            href=""
             rel="noopener"
             target="_blank"
           />
           <Box
             sx={{
-              width: { xs: "80vw", sm: "55vw", md: "40vw", lg: "35vw" },
-              backgroundImage: `url(${trueLogo.src})`,
+              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
+              backgroundImage: `url(${NexTier.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
               backgroundSize: "contain",
-              height: "17vh",
+              height: "20vh",
               mx: "auto",
               my: 5,
             }}
             component={Link}
-            href="https://www.depts.ttu.edu/true/"
+            href="https://nextierofs.com/"
             rel="noopener"
             target="_blank"
           />
           <Box
             sx={{
-              width: { xs: "75vw", sm: "45vw", md: "35vw", lg: "30vw" },
-              backgroundImage: `url(${stemCore.src})`,
+              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
+              backgroundImage: `url(${quext.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
               backgroundSize: "contain",
-              height: "16vh",
+              height: "20vh",
               mx: "auto",
               my: 5,
             }}
             component={Link}
-            href="https://www.depts.ttu.edu/stem/"
+            href="https://onequext.com/"
+            rel="noopener"
+            target="_blank"
+          />
+          <Box
+            sx={{
+              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
+              backgroundImage: `url(${innovationHub.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundSize: "contain",
+              height: "35vh",
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.depts.ttu.edu/research/research-park/"
             rel="noopener"
             target="_blank"
           />
