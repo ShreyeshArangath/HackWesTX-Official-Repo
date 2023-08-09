@@ -4,7 +4,7 @@ import atharva from '../../assets/team-2023-fall/atharva-lade.jpg';
 import emmanuel from '../../assets/team-2023-fall/emmanuel-camacho.jpeg';
 import michael from '../../assets/team-2023-fall/michael-gibich.jpeg';
 import silas from '../../assets/team-2023-fall/silas-kim.jpg';
-import travis from '../../assets/team-2023-fall/travis-libre.png';
+import travis from '../../assets/team-2023-fall/travis-libre.jpg';
 
 export const team2023FallHWT = [
   {

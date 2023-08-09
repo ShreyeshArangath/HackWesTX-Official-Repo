@@ -101,7 +101,7 @@ const Jumbotron = () => {
                 }
               }}
             >
-              Registration opens August 23rd!
+              Registration opens August 24th!
             </Button>
           </Box>
         </Container>
