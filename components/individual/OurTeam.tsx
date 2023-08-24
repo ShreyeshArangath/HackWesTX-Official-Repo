@@ -2,7 +2,7 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { Grid, IconButton, Paper, Typography, useTheme } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import { Box } from "@mui/system";
-import { team2023FallACM, team2023FallHWT } from '../../lib/constants/team-2023-fall'
+import { team2023FallHWT } from '../../lib/constants/team-2023-fall'
 import styles from "../../styles/Home.module.css";
 
 type TeamMemberProps = {
