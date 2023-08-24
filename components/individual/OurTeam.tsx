@@ -82,22 +82,6 @@ const OurTeam = () => {
       >
         {team2023FallHWT.map((member, index) => <TeamMember key={index} name={member.name} role={member.role} websiteUrl={member.websiteUrl} avatarSrc={member.avatarSrc} />)}
       </Grid>
-      /**
-      <Grid item xs={12} my={5}>
-        <Typography textAlign="center" variant="h3" className={styles.glitch}>
-          TTU ACM Chapter Officers
-        </Typography>
-      </Grid>
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-around"
-        rowSpacing={4}
-        px={4}
-      >
-        {team2023FallACM.map((member, index) => <TeamMember key={index} name={member.name} role={member.role} websiteUrl={member.websiteUrl} avatarSrc={member.avatarSrc} />)}
-      </Grid>
-      */
     </Grid>
   );
 };
