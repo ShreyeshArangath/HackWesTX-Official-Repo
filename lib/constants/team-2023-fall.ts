@@ -51,6 +51,7 @@ export const team2023FallHWT = [
   },
 ];
 
+/**
 export const team2023FallACM = [
   {
     name: "Angel Ayala",
@@ -77,3 +78,4 @@ export const team2023FallACM = [
     avatarSrc: silas,
   },
 ];
+*/
