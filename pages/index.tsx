@@ -57,7 +57,7 @@ const HomePage = () => {
 
               <Link
                 style={{ color: "#5865F2" }}
-                href="https://discord.gg/FTDyHCnu"
+                href="https://discord.com/invite/Y9wUhS5cKp"
               >
                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
                   <img style={{ marginRight: "10px" }} src={DiscordLogo.src} width="32" />
