@@ -58,12 +58,12 @@ const Footer = () => {
             color={contrastColor}
           />
           <IconLink
-            href="https://www.depts.ttu.edu/coe/undergraduate/"
+            href="https://www.depts.ttu.edu/cs/"
             child={<SchoolIcon />}
             color={contrastColor}
           />
           <IconLink
-            href={`mailto:contact@hackwestx.com?subject=Quick%20HackWesTX%20Question`}
+            href={`mailto:contact@hackwestx.tech?subject=Quick%20HackWesTX%20Question`}
             child={<MailIcon />}
             color={contrastColor}
           />

@@ -129,6 +129,7 @@ const Navbar = () => {
                       color="common.white"
                       fontFamily="Bungee"
                       className={styles.glitch}
+                      style={{ paddingRight: "100px" }}
                     >
                       HackWesTX
                     </Typography>
@@ -169,6 +170,7 @@ const Navbar = () => {
                   sx={{
                     display: { xs: "none", md: "flex" },
                   }}
+                  style={{ paddingRight: "130px" }}
                 >
                   {pages.map((page) => (
                     <Button
