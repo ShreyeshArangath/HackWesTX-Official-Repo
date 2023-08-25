@@ -11,7 +11,7 @@ import Head from "next/head";
 import Link from "next/link";
 import innovationHub from "../assets/sponsors/innovationHub.png";
 import tacticalLabs from "../assets/sponsors/TacticalComputingLabs.png";
-import acmChapter from "../assets/sponsors/acm-chapter.jpg";
+import acmChapter from "../assets/sponsors/acm-logo.png";
 import quext from "../assets/sponsors/Quext.png";
 import NexTier from "../assets/sponsors/NexTier_OFS.png";
 import FAQ from "../components/individual/FAQ";
@@ -22,6 +22,8 @@ import Sponsorships from "../components/individual/Sponsorships";
 import StudentSlideshow from "../components/individual/StudentSlideshow";
 import { faq } from "../lib/constants/faq";
 import styles from "../styles/Home.module.css";
+import InstagramLogo from "../assets/icons/insta-512.png";
+import DiscordLogo from "../assets/icons/discord-512.webp"
 
 const HomePage = () => {
   return (
@@ -33,6 +35,48 @@ const HomePage = () => {
 
       <Grid container overflow="clip">
         <Jumbotron />
+        <Grid item xs={12} my={7}>
+          <Card
+            elevation={5}
+            sx={{
+              width: {
+                xs: "75vw",
+                sm: "70vw",
+                md: "60vw",
+                lg: "45vw",
+                xl: "30vw",
+              },
+              mx: "auto",
+            }}
+          >
+            <CardContent>
+              <Typography fontStyle="oblique" variant="h5">
+                Join our community!
+              </Typography>
+              <Divider orientation="horizontal" sx={{ px: 3, m: 1 }} />
+
+              <Link
+                style={{ color: "#5865F2" }}
+                href="https://discord.gg/FTDyHCnu"
+              >
+                <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                  <img style={{ marginRight: "10px" }} src={DiscordLogo.src} width="32" />
+                  <span className={styles.glitch} style={{ fontSize: "25px", display: "flex", flexDirection: "row", alignItems: "center" }} >JOIN OUR DISCORD</span>
+                </div>
+              </Link>
+              <br/>
+              <Link
+                style={{ color: "black" }}
+                href="https://instagram.com/hwtxofficial"
+              >
+                <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                  <img style={{ marginRight: "10px" }} src={InstagramLogo.src} width="32" />
+                  <span style={{ display: "flex", flexDirection: "row", alignItems: "center" }} >Instagram</span>
+                </div>
+              </Link>
+            </CardContent>
+          </Card>
+        </Grid>
         <Grid item xs={12} my={7}>
           <Card
             elevation={5}

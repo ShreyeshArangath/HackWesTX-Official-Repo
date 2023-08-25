@@ -86,7 +86,8 @@ const Jumbotron = () => {
             }}
           >
             <Button
-              disableRipple
+              disableRipple={false}
+              href="https://www.townscript.com/e/hackwestx-fall-2023-424424"
               variant="contained"
               color="success"
               size="large"
@@ -95,13 +96,13 @@ const Jumbotron = () => {
                 my: 4,
                 mx: "auto",
                 borderRadius: 10,
-                "&.MuiButtonBase-root:hover": {
-                  bgcolor: "#2e7d32",
-                  cursor: "default"
-                }
+                // "&.MuiButtonBase-root:hover": {
+                //   bgcolor: "#2e7d32",
+                //   cursor: "default"
+                // }
               }}
             >
-              Registration opens August 24th!
+              REGISTER NOW!
             </Button>
           </Box>
         </Container>
