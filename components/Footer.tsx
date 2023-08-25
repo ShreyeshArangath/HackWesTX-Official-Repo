@@ -48,7 +48,7 @@ const Footer = () => {
           mt={2}
         >
           <IconLink
-            href="https://discord.gg/FRXYhR5EBD"
+            href="https://discord.com/invite/Y9wUhS5cKp"
             child={<ForumIcon />}
             color={contrastColor}
           />
