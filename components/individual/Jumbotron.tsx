@@ -87,10 +87,11 @@ const Jumbotron = () => {
           >
             <Button
               disableRipple={false}
-              href="https://www.townscript.com/e/hackwestx-fall-2023-424424"
+              href=""
               variant="contained"
               color="success"
               size="large"
+              onClick={() => popup('hackwestx-fall-2023-424424')}
               sx={{
                 color: theme.palette.success.contrastText,
                 my: 4,
