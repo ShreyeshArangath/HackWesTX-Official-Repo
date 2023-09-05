@@ -22,7 +22,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "typeRoots": ["global.d.ts"]
   },
   "include": [
     "next-env.d.ts",
