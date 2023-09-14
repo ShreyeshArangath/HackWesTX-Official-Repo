@@ -86,24 +86,24 @@ const Jumbotron = () => {
             }}
           >
             <Button
-              disableRipple={false}
+              disableRipple={true}
               href=""
               variant="contained"
               color="success"
               size="large"
-              onClick={() => popup('hackwestx-fall-2023-424424')}
+              // onClick={() => popup('hackwestx-fall-2023-424424')}
               sx={{
                 color: theme.palette.success.contrastText,
                 my: 4,
                 mx: "auto",
                 borderRadius: 10,
-                // "&.MuiButtonBase-root:hover": {
-                //   bgcolor: "#2e7d32",
-                //   cursor: "default"
-                // }
+                "&.MuiButtonBase-root:hover": {
+                  bgcolor: "#2e7d32",
+                  cursor: "default"
+                }
               }}
             >
-              REGISTER NOW!
+              Registration Closed
             </Button>
           </Box>
         </Container>
