@@ -9,11 +9,20 @@ import {
 import { Box } from "@mui/system";
 import Head from "next/head";
 import Link from "next/link";
-import innovationHub from "../assets/sponsors/innovationHub.png";
-import tacticalLabs from "../assets/sponsors/TacticalComputingLabs.png";
-import acmChapter from "../assets/sponsors/acm-logo.png";
-import quext from "../assets/sponsors/Quext.png";
-import NexTier from "../assets/sponsors/NexTier_OFS.png";
+
+import sponsor_tacticalLabs from "../assets/sponsors/TacticalComputingLabs.png";
+
+import sponsor_innovationHub from "../assets/sponsors/innovationHub.png";
+import sponsor_acmChapter from "../assets/sponsors/acm-logo.png";
+import sponsor_quext from "../assets/sponsors/Quext.png";
+import sponsor_NexTier from "../assets/sponsors/NexTier_OFS.png";
+import sponsor_TRUE from "../assets/sponsors/true.png";
+import sponsor_codePath from "../assets/sponsors/codepath.png";
+import sponsor_VRVizio from "../assets/sponsors/VRVizio.png";
+import sponsor_Mathworks from "../assets/sponsors/mathworks.png";
+import sponsor_Dell from "../assets/sponsors/Dell.png";
+
+
 import FAQ from "../components/individual/FAQ";
 import HWTCountdown from "../components/individual/HWTCountdown";
 import Jumbotron from "../components/individual/Jumbotron";
@@ -26,6 +35,9 @@ import InstagramLogo from "../assets/icons/insta-512.png";
 import DiscordLogo from "../assets/icons/discord-512.webp"
 
 const HomePage = () => {
+  const sxWidth = { xs: "50vw", sm: "50vw", amd: "45vw", lg: "30vw" };
+  const sxHeight = "25vh";
+
   return (
     <>
       <Head>
@@ -175,13 +187,14 @@ const HomePage = () => {
             Sponsored By
           </Typography>
         </Grid>
-        <Stack mx="auto" divider={<Divider orientation="horizontal" />}>
+        <Stack mx="auto">
           <Box
             sx={{
-              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-              backgroundImage: `url(${tacticalLabs.src})`,
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_tacticalLabs.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
+              backgroundPositionY: "center",
               backgroundSize: "contain",
               height: "40vh",
               mx: "auto",
@@ -192,14 +205,17 @@ const HomePage = () => {
             rel="noopener"
             target="_blank"
           />
+        </Stack>
+        <Grid container mx="auto">
           <Box
             sx={{
-              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-              backgroundImage: `url(${acmChapter.src})`,
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_acmChapter.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
+              backgroundPositionY: "center",
               backgroundSize: "contain",
-              height: "30vh",
+              height: sxHeight,
               mx: "auto",
               my: 5,
             }}
@@ -210,12 +226,13 @@ const HomePage = () => {
           />
           <Box
             sx={{
-              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-              backgroundImage: `url(${NexTier.src})`,
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_NexTier.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
+              backgroundPositionY: "center",
               backgroundSize: "contain",
-              height: "20vh",
+              height: sxHeight,
               mx: "auto",
               my: 5,
             }}
@@ -226,12 +243,13 @@ const HomePage = () => {
           />
           <Box
             sx={{
-              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-              backgroundImage: `url(${quext.src})`,
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_quext.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
+              backgroundPositionY: "center",
               backgroundSize: "contain",
-              height: "20vh",
+              height: sxHeight,
               mx: "auto",
               my: 5,
             }}
@@ -242,12 +260,30 @@ const HomePage = () => {
           />
           <Box
             sx={{
-              width: { xs: "90vw", sm: "60vw", md: "45vw", lg: "40vw" },
-              backgroundImage: `url(${innovationHub.src})`,
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_TRUE.src})`,
               backgroundRepeat: "no-repeat",
               backgroundPositionX: "center",
+              backgroundPositionY: "center",
               backgroundSize: "contain",
-              height: "35vh",
+              height: sxHeight,
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.depts.ttu.edu/true/"
+            rel="noopener"
+            target="_blank"
+          />
+          <Box
+            sx={{
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_innovationHub.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundPositionY: "center",
+              backgroundSize: "contain",
+              height: sxHeight,
               mx: "auto",
               my: 5,
             }}
@@ -256,7 +292,75 @@ const HomePage = () => {
             rel="noopener"
             target="_blank"
           />
-        </Stack>
+          <Box
+            sx={{
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_codePath.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundPositionY: "center",
+              backgroundSize: "contain",
+              height: sxHeight,
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.codepath.org/"
+            rel="noopener"
+            target="_blank"
+          />
+          <Box
+            sx={{
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_VRVizio.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundPositionY: "center",
+              backgroundSize: "contain",
+              height: sxHeight,
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="/"
+            rel="noopener"
+            target="_blank"
+          />
+          <Box
+            sx={{
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_Mathworks.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundPositionY: "center",
+              backgroundSize: "contain",
+              height: sxHeight,
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.mathworks.com/"
+            rel="noopener"
+            target="_blank"
+          />
+          <Box
+            sx={{
+              width: sxWidth,
+              backgroundImage: `url(${sponsor_Dell.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "center",
+              backgroundPositionY: "center",
+              backgroundSize: "contain",
+              height: sxHeight,
+              mx: "auto",
+              my: 5,
+            }}
+            component={Link}
+            href="https://www.dell.com/en-us"
+            rel="noopener"
+            target="_blank"
+          />
+        </Grid>
 
         <Sponsorships />
         <Grid
