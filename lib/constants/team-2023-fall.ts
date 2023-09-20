@@ -5,6 +5,8 @@ import emmanuel from '../../assets/team-2023-fall/emmanuel-camacho.jpeg';
 import michael from '../../assets/team-2023-fall/michael-gibich.jpeg';
 import silas from '../../assets/team-2023-fall/silas-kim.jpg';
 import travis from '../../assets/team-2023-fall/travis-libre.jpg';
+import angel from '../../assets/team-2023-fall/angel-ayala.png';
+import matt from '../../assets/team-2023-fall/matt.jpg';
 
 export const team2023FallHWT = [
   {
@@ -39,7 +41,7 @@ export const team2023FallHWT = [
   },
   {
     name: "Arnob Roy",
-    role: "Hybrid Hacking Lead",
+    role: "Hacker Experience Lead",
     websiteUrl: "https://www.linkedin.com/in/arnob-roy-58762569/",
     avatarSrc: roy,
   },
@@ -47,7 +49,19 @@ export const team2023FallHWT = [
     name: "Matt",
     role: "Logistics Lead",
     websiteUrl: undefined,
-    avatarSrc: undefined,
+    avatarSrc: matt,
+  },
+  {
+    name: "Michael Gibich",
+    role: "Mentorship Lead",
+    websiteUrl: "https://linkedin.com/in/michael-gibich/",
+    avatarSrc: michael,
+  },
+  {
+    name: "Angel Ayala",
+    role: "ACM Lead",
+    websiteUrl: undefined,
+    avatarSrc: angel,
   },
 ];
 
