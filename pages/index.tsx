@@ -220,7 +220,7 @@ const HomePage = () => {
               my: 5,
             }}
             component={Link}
-            href=""
+            href="https://www.acm.org/"
             rel="noopener"
             target="_blank"
           />
