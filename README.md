@@ -1,29 +1,53 @@
-# HackWesTX 2020
+# HackWesTX
 
-The official website for HackWesTX 2020. The application was made using React, Node, Express, and the Google Cloud Platform. The website is hosted on Google Cloud's App Engine. 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/02f92353-d1de-42c0-b6fc-a29d1d40b183/deploy-status)](https://app.netlify.com/sites/hackwestx/deploys)
 
-## Available Scripts
+🎵 We're back and we're better ✨
+Here you can find the code behind [HackWesTX](https://www.HackwesTX.tech), Texas Tech University's second student-run hackathon!
 
-Please navigate to package.json and change `"start":"node server.js"` to `"start":"react-scripts start"`. This will kickstart the hot-reload feature for development. 
+## Setup
 
-In the project directory, you can run:
+Make sure to install the dependencies:
 
-### `yarn start`
+```bash
+# yarn
+yarn
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Development Server
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Start the development server on http://localhost:3000
 
-### `yarn test`
+```bash
+yarn run dev
+```
 
-Launches the test runner in the interactive watch mode.<br />
+## The Point
 
-### `yarn build`
+The reason why there was an overhaul at all is only because the last site had been built on an old version of React.
+Now that we're back up to date (although a little plain), we can add whatever we want.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Functional Goals
 
+- [x] - Recreate all elements from the original site
+- [-] - Make it prettier
+  - [ ] - Something to spice up the [Jumbotron](components/individual/Jumbotron.tsx)
+  - [x] - Fill up some of the whitespace, whether its juicy css curves or interactive cacti, or anything else
+- [ ] - Auth and QR code support (I'll get on that ~ @Guysnacho)
+- [-] - Responsive navbar/sandwich menu for other pages
+  - [ ] - 1. Distribute content across other pages
+  - [x] - 2. Add [Navbar](components/Navbar.tsx) and simple routing
+  - [x] - 3. Add routing for [authed pages](pages/hackers.tsx) (pages you can only access while logged in)
 
+### Learning Goals
 
+There isn't really a point in doing this if we're not trying something spicy so let's learn the following (at least)
+
+1. [Next.js](https://www.youtube.com/watch?v=Sklc_fQBmcs)
+2. Building reusable components with [React](https://www.youtube.com/watch?v=Tn6-PIqc4UM)
+3. Complex firebase interactions so we can do cool stuff that hackers will use before/during/and after the hackathon
+   - [Firebase in 100 Seconds](https://www.youtube.com/watch?v=vAoB4VbhRzM)
+   - [Chat app tutorial using react-firebase-hooks](https://www.youtube.com/watch?v=zQyrwxMPm88&t=395s)
+   - [react-firebase-hooks](https://github.com/CSFrequency/react-firebase-hooks) library
+
+Alright lets go ~
